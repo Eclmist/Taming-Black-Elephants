@@ -225,6 +225,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Actor\Actor2D.cs" />
     <Compile Include="Assets\Scripts\Dialogue Manager\DialogueButton.cs" />
     <Compile Include="Assets\Scripts\Dialogue Manager\DialogueEventManager.cs" />
     <Compile Include="Assets\Scripts\Dialogue Manager\DialogueManager.cs" />
