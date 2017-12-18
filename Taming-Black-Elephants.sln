@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taming-Black-Elephants.Plugins", "Taming-Black-Elephants.Plugins.csproj", "{9135295B-60AC-86BD-F989-9C02545A7263}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taming-Black-Elephants", "Taming-Black-Elephants.csproj", "{DBECF308-1110-C1F3-38B2-C6609606F54C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taming-Black-Elephants.Editor.Plugins", "Taming-Black-Elephants.Editor.Plugins.csproj", "{4521FC00-291E-669A-C71A-1079BD5D7648}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taming-Black-Elephants.Editor", "Taming-Black-Elephants.Editor.csproj", "{7564AA40-5313-D5C4-D7C6-980AFC0176D2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9135295B-60AC-86BD-F989-9C02545A7263}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9135295B-60AC-86BD-F989-9C02545A7263}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9135295B-60AC-86BD-F989-9C02545A7263}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9135295B-60AC-86BD-F989-9C02545A7263}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBECF308-1110-C1F3-38B2-C6609606F54C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBECF308-1110-C1F3-38B2-C6609606F54C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBECF308-1110-C1F3-38B2-C6609606F54C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBECF308-1110-C1F3-38B2-C6609606F54C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4521FC00-291E-669A-C71A-1079BD5D7648}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4521FC00-291E-669A-C71A-1079BD5D7648}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4521FC00-291E-669A-C71A-1079BD5D7648}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4521FC00-291E-669A-C71A-1079BD5D7648}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7564AA40-5313-D5C4-D7C6-980AFC0176D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7564AA40-5313-D5C4-D7C6-980AFC0176D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7564AA40-5313-D5C4-D7C6-980AFC0176D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7564AA40-5313-D5C4-D7C6-980AFC0176D2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
