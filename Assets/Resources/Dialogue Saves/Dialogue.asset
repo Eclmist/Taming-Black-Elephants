@@ -1,0 +1,685 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1b1505d394846d4096ef559171c2702, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  editorStates:
+  - {fileID: 114773241498039404}
+  saveName: Dialogue
+  savePath: Assets/Resources/Dialogue Saves/Dialogue.asset
+  livesInScene: 0
+  nodes:
+  - {fileID: 114762976523555986}
+  - {fileID: 114625532319391580}
+  - {fileID: 114415390013905572}
+  - {fileID: 114218274911932724}
+  - {fileID: 114872001847427778}
+  - {fileID: 114620626235463128}
+  - {fileID: 114051401490824758}
+  - {fileID: 114358293720137736}
+  - {fileID: 114297051499131374}
+  - {fileID: 114862383044550036}
+  groups: []
+  Name: Dialog
+--- !u!114 &114000971366178184
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3d338988a4691f43b8c0764bd85cf70, type: 3}
+  m_Name: Next
+  m_EditorClassIdentifier: 
+  body: {fileID: 114862383044550036}
+  direction: 2
+  maxConnectionCount: 1
+  styleID: DialogueConnector
+  _connections:
+  - {fileID: 114541099308250022}
+  side: 2
+  sidePosition: 104
+  sideOffset: 0
+--- !u!114 &114009727740035370
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3d338988a4691f43b8c0764bd85cf70, type: 3}
+  m_Name: Next
+  m_EditorClassIdentifier: 
+  body: {fileID: 114415390013905572}
+  direction: 2
+  maxConnectionCount: 1
+  styleID: DialogueConnector
+  _connections:
+  - {fileID: 114234273106281572}
+  side: 2
+  sidePosition: 10
+  sideOffset: 0
+--- !u!114 &114051401490824758
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e7e5999927640c479027d2028e844e6, type: 3}
+  m_Name: Callback
+  m_EditorClassIdentifier: 
+  position: {x: 701.99994, y: -330}
+  dynamicConnectionPorts: []
+  backgroundColor: {r: 1, g: 1, b: 1, a: 1}
+  characterName: Character name
+  characterPotrait: {fileID: 0}
+  potraitOnLeft: 1
+  dialogText: Insert dialogue text here
+  dialogAudio: {fileID: 0}
+  inputKnob: {fileID: 114158705704552844}
+  outputKnob: {fileID: 114499796356804572}
+  callbackEventID: 1
+--- !u!114 &114154837486128974
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3d338988a4691f43b8c0764bd85cf70, type: 3}
+  m_Name: Input
+  m_EditorClassIdentifier: 
+  body: {fileID: 114872001847427778}
+  direction: 1
+  maxConnectionCount: 0
+  styleID: DialogueConnector
+  _connections:
+  - {fileID: 114499796356804572}
+  side: 4
+  sidePosition: 10
+  sideOffset: 0
+--- !u!114 &114158705704552844
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3d338988a4691f43b8c0764bd85cf70, type: 3}
+  m_Name: Input
+  m_EditorClassIdentifier: 
+  body: {fileID: 114051401490824758}
+  direction: 1
+  maxConnectionCount: 0
+  styleID: DialogueConnector
+  _connections:
+  - {fileID: 114606523236220464}
+  side: 4
+  sidePosition: 10
+  sideOffset: 0
+--- !u!114 &114218274911932724
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 666d44db62dfb044dbbb4538a54cf20a, type: 3}
+  m_Name: Basic Dialog
+  m_EditorClassIdentifier: 
+  position: {x: -24.080189, y: -181.04005}
+  dynamicConnectionPorts: []
+  backgroundColor: {r: 1, g: 1, b: 1, a: 1}
+  characterName: Character name
+  characterPotrait: {fileID: 0}
+  potraitOnLeft: 1
+  dialogText: asdaffagsg
+  dialogAudio: {fileID: 0}
+  inputKnob: {fileID: 114234273106281572}
+  outputKnob: {fileID: 114489647967275416}
+--- !u!114 &114234273106281572
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3d338988a4691f43b8c0764bd85cf70, type: 3}
+  m_Name: Input
+  m_EditorClassIdentifier: 
+  body: {fileID: 114218274911932724}
+  direction: 1
+  maxConnectionCount: 0
+  styleID: DialogueConnector
+  _connections:
+  - {fileID: 114009727740035370}
+  side: 4
+  sidePosition: 10
+  sideOffset: 0
+--- !u!114 &114252247551247102
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3d338988a4691f43b8c0764bd85cf70, type: 3}
+  m_Name: Input
+  m_EditorClassIdentifier: 
+  body: {fileID: 114762976523555986}
+  direction: 1
+  maxConnectionCount: 0
+  styleID: DialogueConnector
+  _connections:
+  - {fileID: 114923786637974406}
+  side: 4
+  sidePosition: 10
+  sideOffset: 0
+--- !u!114 &114285539164716572
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3d338988a4691f43b8c0764bd85cf70, type: 3}
+  m_Name: Next
+  m_EditorClassIdentifier: 
+  body: {fileID: 114872001847427778}
+  direction: 2
+  maxConnectionCount: 1
+  styleID: DialogueConnector
+  _connections: []
+  side: 2
+  sidePosition: 10
+  sideOffset: 0
+--- !u!114 &114297051499131374
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 666d44db62dfb044dbbb4538a54cf20a, type: 3}
+  m_Name: Basic Dialog
+  m_EditorClassIdentifier: 
+  position: {x: 981.9199, y: 111.95992}
+  dynamicConnectionPorts: []
+  backgroundColor: {r: 1, g: 1, b: 1, a: 1}
+  characterName: Character name
+  characterPotrait: {fileID: 0}
+  potraitOnLeft: 1
+  dialogText: :)
+  dialogAudio: {fileID: 0}
+  inputKnob: {fileID: 114318440181520214}
+  outputKnob: {fileID: 114561508391440686}
+--- !u!114 &114318440181520214
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3d338988a4691f43b8c0764bd85cf70, type: 3}
+  m_Name: Input
+  m_EditorClassIdentifier: 
+  body: {fileID: 114297051499131374}
+  direction: 1
+  maxConnectionCount: 0
+  styleID: DialogueConnector
+  _connections:
+  - {fileID: 114937162406782672}
+  side: 4
+  sidePosition: 10
+  sideOffset: 0
+--- !u!114 &114320990343001162
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3d338988a4691f43b8c0764bd85cf70, type: 3}
+  m_Name: Input
+  m_EditorClassIdentifier: 
+  body: {fileID: 114862383044550036}
+  direction: 1
+  maxConnectionCount: 0
+  styleID: DialogueConnector
+  _connections:
+  - {fileID: 114489647967275416}
+  side: 4
+  sidePosition: 10
+  sideOffset: 0
+--- !u!114 &114356140544667388
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3d338988a4691f43b8c0764bd85cf70, type: 3}
+  m_Name: Input
+  m_EditorClassIdentifier: 
+  body: {fileID: 114620626235463128}
+  direction: 1
+  maxConnectionCount: 0
+  styleID: DialogueConnector
+  _connections:
+  - {fileID: 114754743223065356}
+  side: 4
+  sidePosition: 10
+  sideOffset: 0
+--- !u!114 &114358293720137736
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e7e5999927640c479027d2028e844e6, type: 3}
+  m_Name: Callback
+  m_EditorClassIdentifier: 
+  position: {x: 688.1198, y: 1.1600037}
+  dynamicConnectionPorts: []
+  backgroundColor: {r: 1, g: 1, b: 1, a: 1}
+  characterName: Character name
+  characterPotrait: {fileID: 0}
+  potraitOnLeft: 1
+  dialogText: Insert dialogue text here
+  dialogAudio: {fileID: 0}
+  inputKnob: {fileID: 114541099308250022}
+  outputKnob: {fileID: 114937162406782672}
+  callbackEventID: 2
+--- !u!114 &114415390013905572
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 666d44db62dfb044dbbb4538a54cf20a, type: 3}
+  m_Name: Basic Dialog
+  m_EditorClassIdentifier: 
+  position: {x: -419.59998, y: -180}
+  dynamicConnectionPorts: []
+  backgroundColor: {r: 1, g: 1, b: 1, a: 1}
+  characterName: CHaracter Name
+  characterPotrait: {fileID: 0}
+  potraitOnLeft: 0
+  dialogText: ' sdaf d afaf dasf dasfds fsd dsaf asfd safd safasf sdaf d afaf dasf
+    dasfds fsd dsaf asfd safd safasf sdaf d afaf dasf dasfds fsd dsaf asfd safd safasf
+    sdaf d afaf dasf dasfds fsd dsaf asfd safd safasf sdaf d afaf dasf dasfds fsd
+    dsaf asfd safd safasf'
+  dialogAudio: {fileID: 0}
+  inputKnob: {fileID: 114948271682408874}
+  outputKnob: {fileID: 114009727740035370}
+--- !u!114 &114489647967275416
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3d338988a4691f43b8c0764bd85cf70, type: 3}
+  m_Name: Next
+  m_EditorClassIdentifier: 
+  body: {fileID: 114218274911932724}
+  direction: 2
+  maxConnectionCount: 1
+  styleID: DialogueConnector
+  _connections:
+  - {fileID: 114320990343001162}
+  side: 2
+  sidePosition: 10
+  sideOffset: 0
+--- !u!114 &114499796356804572
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3d338988a4691f43b8c0764bd85cf70, type: 3}
+  m_Name: Next
+  m_EditorClassIdentifier: 
+  body: {fileID: 114051401490824758}
+  direction: 2
+  maxConnectionCount: 1
+  styleID: DialogueConnector
+  _connections:
+  - {fileID: 114154837486128974}
+  side: 2
+  sidePosition: 10
+  sideOffset: 0
+--- !u!114 &114541099308250022
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3d338988a4691f43b8c0764bd85cf70, type: 3}
+  m_Name: Input
+  m_EditorClassIdentifier: 
+  body: {fileID: 114358293720137736}
+  direction: 1
+  maxConnectionCount: 0
+  styleID: DialogueConnector
+  _connections:
+  - {fileID: 114000971366178184}
+  side: 4
+  sidePosition: 10
+  sideOffset: 0
+--- !u!114 &114561508391440686
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3d338988a4691f43b8c0764bd85cf70, type: 3}
+  m_Name: Next
+  m_EditorClassIdentifier: 
+  body: {fileID: 114297051499131374}
+  direction: 2
+  maxConnectionCount: 1
+  styleID: DialogueConnector
+  _connections: []
+  side: 2
+  sidePosition: 10
+  sideOffset: 0
+--- !u!114 &114606523236220464
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3d338988a4691f43b8c0764bd85cf70, type: 3}
+  m_Name: Next
+  m_EditorClassIdentifier: 
+  body: {fileID: 114862383044550036}
+  direction: 2
+  maxConnectionCount: 1
+  styleID: DialogueConnector
+  _connections:
+  - {fileID: 114158705704552844}
+  side: 2
+  sidePosition: 56
+  sideOffset: 0
+--- !u!114 &114620626235463128
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 666d44db62dfb044dbbb4538a54cf20a, type: 3}
+  m_Name: Basic Dialog
+  m_EditorClassIdentifier: 
+  position: {x: 1051.6, y: -186.39996}
+  dynamicConnectionPorts: []
+  backgroundColor: {r: 1, g: 1, b: 1, a: 1}
+  characterName: Character name
+  characterPotrait: {fileID: 0}
+  potraitOnLeft: 1
+  dialogText: option 2
+  dialogAudio: {fileID: 0}
+  inputKnob: {fileID: 114356140544667388}
+  outputKnob: {fileID: 114737243760835094}
+--- !u!114 &114625532319391580
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dee01ff58c332c041b4147c7b1cb4b73, type: 3}
+  m_Name: Dialog Start
+  m_EditorClassIdentifier: 
+  position: {x: -1155.8, y: -153.79999}
+  dynamicConnectionPorts: []
+  backgroundColor: {r: 1, g: 1, b: 1, a: 1}
+  characterName: Character name
+  characterPotrait: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  potraitOnLeft: 1
+  dialogText: Insert dialog text here
+  dialogAudio: {fileID: 0}
+  dialogueID: 0
+  outputKnob: {fileID: 114923786637974406}
+--- !u!114 &114737243760835094
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3d338988a4691f43b8c0764bd85cf70, type: 3}
+  m_Name: Next
+  m_EditorClassIdentifier: 
+  body: {fileID: 114620626235463128}
+  direction: 2
+  maxConnectionCount: 1
+  styleID: DialogueConnector
+  _connections: []
+  side: 2
+  sidePosition: 10
+  sideOffset: 0
+--- !u!114 &114754743223065356
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3d338988a4691f43b8c0764bd85cf70, type: 3}
+  m_Name: Next
+  m_EditorClassIdentifier: 
+  body: {fileID: 114862383044550036}
+  direction: 2
+  maxConnectionCount: 1
+  styleID: DialogueConnector
+  _connections:
+  - {fileID: 114356140544667388}
+  side: 2
+  sidePosition: 80
+  sideOffset: 0
+--- !u!114 &114762976523555986
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 666d44db62dfb044dbbb4538a54cf20a, type: 3}
+  m_Name: Basic Dialog
+  m_EditorClassIdentifier: 
+  position: {x: -818.6, y: -186.2}
+  dynamicConnectionPorts: []
+  backgroundColor: {r: 1, g: 1, b: 1, a: 1}
+  characterName: Character name
+  characterPotrait: {fileID: 0}
+  potraitOnLeft: 1
+  dialogText: Insert dialogue text here
+  dialogAudio: {fileID: 0}
+  inputKnob: {fileID: 114252247551247102}
+  outputKnob: {fileID: 114827522419966798}
+--- !u!114 &114773241498039404
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6ab6487237ff124ea4c2aa5de9ce3fb, type: 3}
+  m_Name: MainEditorState
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 0}
+  parentEditor: {fileID: 0}
+  selectedNode: {fileID: 0}
+  panOffset: {x: -866.91986, y: 244.84}
+  zoom: 1.2
+--- !u!114 &114827522419966798
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3d338988a4691f43b8c0764bd85cf70, type: 3}
+  m_Name: Next
+  m_EditorClassIdentifier: 
+  body: {fileID: 114762976523555986}
+  direction: 2
+  maxConnectionCount: 1
+  styleID: DialogueConnector
+  _connections:
+  - {fileID: 114948271682408874}
+  side: 2
+  sidePosition: 10
+  sideOffset: 0
+--- !u!114 &114862383044550036
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98f724aada8a08e43a58e0e731b3852f, type: 3}
+  m_Name: Multiple Options Selector
+  m_EditorClassIdentifier: 
+  position: {x: 456, y: -202.8}
+  dynamicConnectionPorts:
+  - {fileID: 114606523236220464}
+  - {fileID: 114754743223065356}
+  - {fileID: 114000971366178184}
+  backgroundColor: {r: 1, g: 1, b: 1, a: 1}
+  characterName: Character name
+  characterPotrait: {fileID: 0}
+  potraitOnLeft: 1
+  dialogText: Insert dialogue text here
+  dialogAudio: {fileID: 0}
+  inputKnob: {fileID: 114320990343001162}
+  _options:
+  - OptionDisplay: 12321312
+  - OptionDisplay: 21312313
+  - OptionDisplay: 12321312
+--- !u!114 &114872001847427778
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 666d44db62dfb044dbbb4538a54cf20a, type: 3}
+  m_Name: Basic Dialog
+  m_EditorClassIdentifier: 
+  position: {x: 952.1199, y: -467.8401}
+  dynamicConnectionPorts: []
+  backgroundColor: {r: 1, g: 1, b: 1, a: 1}
+  characterName: Character name
+  characterPotrait: {fileID: 0}
+  potraitOnLeft: 1
+  dialogText: 1
+  dialogAudio: {fileID: 0}
+  inputKnob: {fileID: 114154837486128974}
+  outputKnob: {fileID: 114285539164716572}
+--- !u!114 &114923786637974406
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3d338988a4691f43b8c0764bd85cf70, type: 3}
+  m_Name: Next
+  m_EditorClassIdentifier: 
+  body: {fileID: 114625532319391580}
+  direction: 2
+  maxConnectionCount: 1
+  styleID: DialogueConnector
+  _connections:
+  - {fileID: 114252247551247102}
+  side: 2
+  sidePosition: 10
+  sideOffset: 0
+--- !u!114 &114937162406782672
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3d338988a4691f43b8c0764bd85cf70, type: 3}
+  m_Name: Next
+  m_EditorClassIdentifier: 
+  body: {fileID: 114358293720137736}
+  direction: 2
+  maxConnectionCount: 1
+  styleID: DialogueConnector
+  _connections:
+  - {fileID: 114318440181520214}
+  side: 2
+  sidePosition: 10
+  sideOffset: 0
+--- !u!114 &114948271682408874
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3d338988a4691f43b8c0764bd85cf70, type: 3}
+  m_Name: Input
+  m_EditorClassIdentifier: 
+  body: {fileID: 114415390013905572}
+  direction: 1
+  maxConnectionCount: 0
+  styleID: DialogueConnector
+  _connections:
+  - {fileID: 114827522419966798}
+  side: 4
+  sidePosition: 10
+  sideOffset: 0
