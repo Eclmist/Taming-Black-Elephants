@@ -41,3 +41,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Infrastructure
+    uniqueID: 309901741
+    locked: 0
+  - name: Furniture
+    uniqueID: 1550789309
+    locked: 0
+  - name: Interactables
+    uniqueID: 2623530125
+    locked: 0
+  - name: Lighting
+    uniqueID: 3564272733
+    locked: 0
+  - name: Player
+    uniqueID: 1832673171
+    locked: 0
