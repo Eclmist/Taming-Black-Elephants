@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Collider))]
+[RequireComponent(typeof(Collider2D))]
 public class LevelTransition : MonoBehaviour {
 
     public string targetScene = "";
@@ -17,7 +17,7 @@ public class LevelTransition : MonoBehaviour {
 
     private void LoadScene()
     {
-
+        Initiate.Fade(targetScene, Color.black, 2.0f);
     }
 
 

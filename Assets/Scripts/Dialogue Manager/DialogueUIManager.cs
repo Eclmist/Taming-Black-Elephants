@@ -19,6 +19,7 @@ public class DialogueUIManager : MonoBehaviour
 
     private bool messageCompleted = true;
     private bool skipTyping = false;
+    private bool freezeTime = false;
 
     // Options
     private int selectedOptionIndex = -1;
@@ -57,11 +58,26 @@ public class DialogueUIManager : MonoBehaviour
 
             messageObj.text += next;
 
-            yield return new WaitForSeconds(1-speed);
+            yield return WaitForRealSeconds(1 - speed);
         }
 
         messageCompleted = true;
     }
+
+    public IEnumerator _WaitForRealSeconds(float aTime)
+    {
+        while (aTime > 0f)
+        {
+            aTime -= Mathf.Clamp(Time.unscaledDeltaTime, 0, 0.2f);
+            yield return null;
+        }
+    }
+
+    public Coroutine WaitForRealSeconds(float aTime)
+    {
+        return StartCoroutine(_WaitForRealSeconds(aTime));
+    }
+
 
     public void DisplayNewMessage(string characterName, string message, float speed,
         Sprite portrait = null, bool portraitOnLeft = true)
@@ -127,6 +143,11 @@ public class DialogueUIManager : MonoBehaviour
     public void ToggleDialogueUI(bool active)
     {
         canvasGroup.alpha = active ? 1 : 0;
+
+        if (freezeTime)
+        {
+            Time.timeScale = active ? 0 : 1;
+        }
     }
 
     public bool IsMessageCompletelyShown()
@@ -137,5 +158,10 @@ public class DialogueUIManager : MonoBehaviour
     public void SkipTypewriter()
     {
         skipTyping = true;
+    }
+
+    public void SetFreezeTime(bool active)
+    {
+        freezeTime = active;
     }
 }

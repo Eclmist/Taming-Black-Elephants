@@ -2,21 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DialogueTrigger : MonoBehaviour 
+public class DialogueTrigger : MonoBehaviour, IInteractable 
 {
     [SerializeField] private int dialogID;
 
-    protected void Update () 
-	{
-        if (Input.GetKeyDown(KeyCode.L)) // TODO: Replace with whatever
+    public void Interact()
+    {
+        if (DialogueManager.Instance == null)
         {
-            if (DialogueManager.Instance == null)
-            {
-                Debug.LogError("Dialog Manager is null!");
-                return;
-            }
-
-            DialogueManager.Instance.StartNewDialogue(dialogID);
+            Debug.LogError("Dialog Manager is null!");
+            return;
         }
-	}
+
+        DialogueManager.Instance.StartNewDialogue(dialogID);
+    }
 }

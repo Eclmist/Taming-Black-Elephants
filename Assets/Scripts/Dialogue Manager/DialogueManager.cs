@@ -9,8 +9,9 @@ public class DialogueManager : MonoBehaviour
     public static DialogueManager Instance;
 
     [Header("Settings")]
-    [SerializeField] [Range(0, 1)] private float textSpeed;
+    [SerializeField] [Range(0, 1)] private float textSpeed = 0.98F;
     [SerializeField] private bool autoAdvance;
+    [SerializeField] private bool freezeTime = true;
 
     [Header("Resources")]
     [SerializeField] private DialogueNodeCanvas dialogueCanvas;
@@ -30,6 +31,8 @@ public class DialogueManager : MonoBehaviour
         {
             if (uiManager != null)
             {
+                uiManager.SetFreezeTime(freezeTime);
+
                 return;
             }
         }
