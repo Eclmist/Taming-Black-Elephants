@@ -4,11 +4,9 @@ using UnityEngine;
 using UnityEngine.Serialization;
 
 [RequireComponent(typeof(Rigidbody2D))]
-[RequireComponent(typeof(Collider2D))]
 public class Actor2D : MonoBehaviour 
 {
     protected Rigidbody2D rigidbody;
-    protected Collider2D collider;
     protected Animator animator;
 
     // Movement
@@ -25,7 +23,6 @@ public class Actor2D : MonoBehaviour
     protected virtual void Awake()
     {
         rigidbody = GetComponent<Rigidbody2D>();
-        collider = GetComponent<Collider2D>();
 
         animator = GetComponent<Animator>();
 
@@ -73,7 +70,7 @@ public class Actor2D : MonoBehaviour
         }
     }
 
-    public virtual void MoveTo(Vector2 targetPosition, float bias = 0)
+    public virtual void MoveTo(Vector2 targetPosition, float bias = 0.1F)
     {
         this.targetPosition = targetPosition;
         this.movementBias = bias;
@@ -84,7 +81,7 @@ public class Actor2D : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             Vector2 clickPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            MoveTo(clickPos, 1);
+            MoveTo(clickPos);
         }
     }
 }
