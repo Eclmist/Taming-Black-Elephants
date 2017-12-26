@@ -2,8 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using NodeEditorFramework;
+
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
+
 using UnityEngine;
+
 
 [Node(false, "Dialogue/Multiple Options Node", typeof(DialogueNodeCanvas))]
 public class DialogueMultiOptionNode : BaseDialogueNode
@@ -41,6 +46,8 @@ public class DialogueMultiOptionNode : BaseDialogueNode
         Debug.Log("Created");
         AddNewOption();
     }
+
+#if UNITY_EDITOR
 
     public override void NodeGUI()
     {
@@ -95,6 +102,8 @@ public class DialogueMultiOptionNode : BaseDialogueNode
         }
         GUILayout.EndVertical();
     }
+
+#endif
 
     private void AddNewOption()
     {

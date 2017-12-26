@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using NodeEditorFramework;
+
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 
 [Node(true, "Dialogue/Base Dialogue Node", typeof(DialogueNodeCanvas))]
 public abstract class BaseDialogueNode : Node
@@ -32,6 +35,7 @@ public abstract class BaseDialogueNode : Node
         potraitOnLeft = true;
     }
 
+#if UNITY_EDITOR
     public override void NodeGUI()
     {
         DrawNodeGUIPrefix();
@@ -75,6 +79,8 @@ public abstract class BaseDialogueNode : Node
         }
         GUILayout.EndHorizontal();
     }
+
+#endif
 
     public abstract BaseDialogueNode GetNextNode();
 }

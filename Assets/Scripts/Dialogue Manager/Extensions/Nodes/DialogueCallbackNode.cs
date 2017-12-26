@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System;
 using UnityEngine;
 using NodeEditorFramework;
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 using UnityEngine.Events;
 
 [Node(false, "Dialogue/Callback Node", typeof(DialogueNodeCanvas))]
@@ -33,6 +35,8 @@ public class DialogueCallbackNode : BaseDialogueNode
         callbackEventID = -1;
     }
 
+
+#if UNITY_EDITOR
     public override void NodeGUI()
     {
 
@@ -44,7 +48,7 @@ public class DialogueCallbackNode : BaseDialogueNode
         GUILayout.EndVertical();
 
     }
-
+#endif
     public override BaseDialogueNode GetNextNode()
     {
         return outputKnob.connections[0].body as BaseDialogueNode;

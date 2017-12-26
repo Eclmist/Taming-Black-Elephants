@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using NodeEditorFramework;
+
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 
 [Node(false, "Comment", typeof(DialogueNodeCanvas))]
 public class CommentNode : Node 
@@ -16,6 +19,7 @@ public class CommentNode : Node
     public string comment;
     protected Vector2 scroll;
 
+#if UNITY_EDITOR
     public override void NodeGUI()
     {
         EditorStyles.textField.wordWrap = true;
@@ -27,4 +31,5 @@ public class CommentNode : Node
         GUILayout.EndHorizontal();
 
     }
+#endif
 }

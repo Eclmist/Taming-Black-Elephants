@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using NodeEditorFramework;
+
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 
 [Node(false, "Dialogue/Start Node", typeof(DialogueNodeCanvas))]
 public class DialogueStartNode : BaseDialogueNode 
@@ -30,6 +33,7 @@ public class DialogueStartNode : BaseDialogueNode
     [ConnectionKnob("Next", Direction.Out, "DialogueConnector", NodeSide.Right, nodePositionOffset)]
     public ConnectionKnob outputKnob;
 
+#if UNITY_EDITOR
     public override void NodeGUI()
     {
         //DrawNodeGUIPrefix();
@@ -42,6 +46,7 @@ public class DialogueStartNode : BaseDialogueNode
 
         //DrawNodeGUISuffix();
     }
+#endif
 
     public override BaseDialogueNode GetNextNode()
     {
