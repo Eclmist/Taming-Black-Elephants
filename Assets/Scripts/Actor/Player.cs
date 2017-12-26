@@ -13,9 +13,6 @@ public class Player : Actor2D
         get {return colliderTransform;}
     }
 
-
-    private IInteractable queuedInteractableObject;
-
     protected override void Awake()
     {
         base.Awake();
@@ -46,29 +43,26 @@ public class Player : Actor2D
 
                 if (interactable != null)
                 {
-                    Debug.Log("touched Interactable");
-                    queuedInteractableObject = interactable;
-                    break;
+                    if ((transform.position - touched.gameObject.transform.position).sqrMagnitude < 1F)
+                    {
+                        CheckInteraction(interactable);
+
+                        break;
+                    }
                 }
             }
 
         }
-
-        CheckInteraction();
     }
 
-    protected void CheckInteraction()
+    protected void CheckInteraction(IInteractable queuedInteractableObject)
     {
         if (queuedInteractableObject == null)
             return;
 
-        if ((transform.position -
-            ((MonoBehaviour)queuedInteractableObject).gameObject.transform.position).sqrMagnitude < 1F)
-        {
-            queuedInteractableObject.Interact();
+        queuedInteractableObject.Interact();
 
-            queuedInteractableObject = null;
-        }
+        queuedInteractableObject = null;
     }
 
 }

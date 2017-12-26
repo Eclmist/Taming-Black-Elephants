@@ -24,7 +24,7 @@ public class Actor2D : MonoBehaviour
     {
         rigidbody = GetComponent<Rigidbody2D>();
 
-        animator = GetComponent<Animator>();
+        animator = GetComponentInChildren<Animator>();
 
         rigidbody.gravityScale = 0;
         rigidbody.drag = 5;
@@ -53,7 +53,23 @@ public class Actor2D : MonoBehaviour
 
     protected virtual void AnimatorUpdate()
     {
+        float horizontal = rigidbody.velocity.x;
+        float vertical = rigidbody.velocity.y;
 
+        if (Mathf.Abs(horizontal) > Mathf.Abs(vertical))
+            vertical = 0;
+        else
+            horizontal = 0;
+
+        animator.SetFloat("Horizontal", horizontal);
+        animator.SetFloat("Vertical", vertical);
+        animator.SetFloat("Magnitude", rigidbody.velocity.sqrMagnitude);
+
+
+        if (rigidbody.velocity.sqrMagnitude < 0.01F)
+            animator.speed = 0;
+        else
+            animator.speed = 1;
     }
 
     protected virtual void Move()
