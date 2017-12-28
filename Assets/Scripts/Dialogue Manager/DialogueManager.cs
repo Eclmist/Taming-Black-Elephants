@@ -9,7 +9,7 @@ public class DialogueManager : MonoBehaviour
     public static DialogueManager Instance;
 
     [Header("Settings")]
-    [SerializeField] [Range(0, 1)] private float textSpeed = 0.98F;
+    [SerializeField] [Range(0, 1)] private float textSpeed = 1;
     [SerializeField] private bool autoAdvance;
     [SerializeField] private bool freezeTime = true;
 
@@ -112,6 +112,9 @@ public class DialogueManager : MonoBehaviour
             uiManager.DisplayNewMessage(node.characterName, node.dialogText, textSpeed,
                 node.characterPotrait, node.potraitOnLeft);
 
+            // Get rid of 1 mouse click
+            yield return null;
+
 
             while (uiManager.IsMessageCompletelyShown() == false)
             {
@@ -121,6 +124,7 @@ public class DialogueManager : MonoBehaviour
 
                 yield return null;
             }
+
 
             // Check for auto advance
             if (!autoAdvance)

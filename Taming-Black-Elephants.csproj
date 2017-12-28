@@ -287,11 +287,14 @@
     <Compile Include="Assets\Scripts\Dialogue Manager\Extensions\Nodes\DialogueNode.cs" />
     <Compile Include="Assets\Scripts\Dialogue Manager\Extensions\Nodes\DialogueStartNode.cs" />
     <Compile Include="Assets\Scripts\Dialogue Manager\Extensions\Utility\AudioUtils.cs" />
+    <Compile Include="Assets\Scripts\Helper\CoroutineUtil.cs" />
     <Compile Include="Assets\Scripts\Interactables\IInteractable.cs" />
     <Compile Include="Assets\Scripts\Interactables\LevelTransition.cs" />
     <Compile Include="Assets\Scripts\Level\LevelSetting.cs" />
     <Compile Include="Assets\Scripts\Scene Loader\Fader.cs" />
     <Compile Include="Assets\Scripts\Scene Loader\Initiate.cs" />
+    <Compile Include="Assets\Scripts\Scene Loader\LevelPortalCollection.cs" />
+    <Compile Include="Assets\Scripts\Scene Loader\SpawnManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Graphics\Shaders\SimpleGrabPassBlur.shader" />

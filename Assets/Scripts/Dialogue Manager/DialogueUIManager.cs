@@ -58,26 +58,11 @@ public class DialogueUIManager : MonoBehaviour
 
             messageObj.text += next;
 
-            yield return WaitForRealSeconds(1 - speed);
+            yield return StartCoroutine(CoroutineUtil.WaitForRealSeconds(1 - speed));
         }
 
         messageCompleted = true;
     }
-
-    public IEnumerator _WaitForRealSeconds(float aTime)
-    {
-        while (aTime > 0f)
-        {
-            aTime -= Mathf.Clamp(Time.unscaledDeltaTime, 0, 0.2f);
-            yield return null;
-        }
-    }
-
-    public Coroutine WaitForRealSeconds(float aTime)
-    {
-        return StartCoroutine(_WaitForRealSeconds(aTime));
-    }
-
 
     public void DisplayNewMessage(string characterName, string message, float speed,
         Sprite portrait = null, bool portraitOnLeft = true)

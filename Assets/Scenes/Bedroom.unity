@@ -357,8 +357,48 @@ Transform:
   - {fileID: 1253587429}
   - {fileID: 57215409}
   m_Father: {fileID: 1928018992}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &413608850
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 413608851}
+  - component: {fileID: 413608852}
+  m_Layer: 0
+  m_Name: Spawn Handler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &413608851
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 413608850}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.3727217, y: 1.3212934, z: 0.1665039}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &413608852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 413608850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f1a3bb13cd876e4696cdc5a7bccf6b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &492509436
 GameObject:
   m_ObjectHideFlags: 0
@@ -2003,12 +2043,12 @@ Prefab:
     - target: {fileID: 224242506782246950, guid: 5d91d5a536e48f84d9ce8ce3b6fc569e,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 442.5
+      value: 263.5
       objectReference: {fileID: 0}
     - target: {fileID: 224242506782246950, guid: 5d91d5a536e48f84d9ce8ce3b6fc569e,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 235
+      value: 148
       objectReference: {fileID: 0}
     - target: {fileID: 224242506782246950, guid: 5d91d5a536e48f84d9ce8ce3b6fc569e,
         type: 2}
@@ -4895,12 +4935,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1525173360}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -3.5, y: -1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1928018992}
-  m_RootOrder: 1
+  m_Father: {fileID: 1635474999}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1525173362
 MonoBehaviour:
@@ -4914,6 +4954,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetScene: LivingRoom
+  targetIndex: 0
 --- !u!61 &1525173363
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4939,6 +4980,35 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &1635474998
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1635474999}
+  m_Layer: 0
+  m_Name: Portals
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1635474999
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1635474998}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1525173361}
+  m_Father: {fileID: 1928018992}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1673609190
 GameObject:
   m_ObjectHideFlags: 0
@@ -5197,8 +5267,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eee6d65b61fbdc74aa4f48e74869cfcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftBound: -4.99
-  rightBound: 6.97
+  leftBound: -6.21
+  rightBound: 7.33
   topBound: 6.01
   bottomBound: -3.98
 --- !u!114 &1775132669
@@ -5212,7 +5282,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 522e6928d46e1c747ab682eb5329283c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textSpeed: 0.98
+  textSpeed: 0.961
   autoAdvance: 0
   freezeTime: 1
   dialogueCanvas: {fileID: 11400000, guid: 57363e5d4a8dfbe45a59223c3204a3ef, type: 2}
@@ -5253,6 +5323,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1928018992}
   - component: {fileID: 1928018991}
+  - component: {fileID: 1928018993}
   m_Layer: 0
   m_Name: Colliders
   m_TagString: Untagged
@@ -5282,11 +5353,24 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1368852123}
-  - {fileID: 1525173361}
   - {fileID: 389961106}
+  - {fileID: 1635474999}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1928018993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1928018990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62db3cae5b047594a81f7f933f0b00ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portals:
+  - {fileID: 1525173362}
 --- !u!1 &1969950255
 GameObject:
   m_ObjectHideFlags: 0
