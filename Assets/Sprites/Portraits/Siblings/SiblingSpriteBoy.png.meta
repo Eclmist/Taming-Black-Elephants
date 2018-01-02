@@ -1,11 +1,9 @@
 fileFormatVersion: 2
-guid: c1b2172512e66494cb9cb7eaab55ef4b
-timeCreated: 1512374188
+guid: 9c8ac0bd02deb314b8b65f5033f40244
+timeCreated: 1514875832
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: 10_basic_message_boxes_by_CharlesGabriel_0
-    21300002: 10_basic_message_boxes_by_CharlesGabriel_1
+  fileIDToRecycleName: {}
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -42,13 +40,13 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 30
+  spritePixelsToUnits: 100
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -67,46 +65,9 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-  - buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: 10_basic_message_boxes_by_CharlesGabriel_0
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 680
-        width: 317
-        height: 80
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 13, y: 11, z: 12, w: 12}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: 10_basic_message_boxes_by_CharlesGabriel_1
-      rect:
-        serializedVersion: 2
-        x: 321
-        y: 601
-        width: 318
-        height: 78
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 9, y: 8, z: 7, w: 9}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
+    sprites: []
     outline: []
     physicsShape: []
   spritePackingTag: 

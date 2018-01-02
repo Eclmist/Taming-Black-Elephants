@@ -132,9 +132,12 @@ public class DialogueMultiOptionNode : BaseDialogueNode
 
     public override BaseDialogueNode GetNextNode()
     {
-        if (selectedOptionIndex != -1)
+        if (selectedOptionIndex != -1 && selectedOptionIndex < dynamicConnectionPorts.Count)
         {
-            return dynamicConnectionPorts[selectedOptionIndex].connections[0].body as BaseDialogueNode;
+            if (dynamicConnectionPorts[selectedOptionIndex].connections.Count > 0)
+                return dynamicConnectionPorts[selectedOptionIndex].connections[0].body as BaseDialogueNode;
+
+            return null;
         }
 
         return null;

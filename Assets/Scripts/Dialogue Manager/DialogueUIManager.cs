@@ -87,7 +87,7 @@ public class DialogueUIManager : MonoBehaviour
             else
             {
                 portraitRight.enabled = true;
-                portraitLeft.sprite = portrait;
+                portraitRight.sprite = portrait;
             }
         }
 
