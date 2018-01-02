@@ -7,6 +7,7 @@ public class Player : Actor2D
     public static Player Instance;
 
     [SerializeField] private Transform colliderTransform;
+    private float lastFrameSpeed = 0;
 
     public new Transform transform 
     {
@@ -27,7 +28,7 @@ public class Player : Actor2D
     {
         base.Update();
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && Time.timeScale != 0)
         {
             Vector2 clickPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             MoveTo(clickPos);
@@ -61,6 +62,8 @@ public class Player : Actor2D
             return;
 
         queuedInteractableObject.Interact();
+
+        UndoMoveTo();
 
         queuedInteractableObject = null;
     }

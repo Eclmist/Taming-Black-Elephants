@@ -70,8 +70,10 @@ public class SpawnManager : MonoBehaviour
         }
         else
         {
-            Instantiate<GameObject>(Resources.Load("Player") as GameObject,
+            existingPlayerObj = Instantiate(Resources.Load("Player") as GameObject,
                 targetSpawnPos, Quaternion.identity);
         }
+
+        Player.Instance.UndoMoveTo();
     }
 }

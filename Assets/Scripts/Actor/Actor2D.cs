@@ -92,6 +92,13 @@ public class Actor2D : MonoBehaviour
         this.movementBias = bias;
     }
 
+    public virtual void UndoMoveTo()
+
+    {
+        this.targetPosition = transform.position;
+        this.movementBias = 0.1f;
+    }
+
     protected virtual void OnDebug()
     {
         if (Input.GetMouseButtonDown(0))
