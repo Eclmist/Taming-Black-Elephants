@@ -75,5 +75,6 @@ public class SpawnManager : MonoBehaviour
         }
 
         Player.Instance.UndoMoveTo();
+        Player.Instance.allowInteractions = true;
     }
 }

@@ -58,6 +58,7 @@ public class LevelTransition : MonoBehaviour, IInteractable {
         LevelSetting.lastKnownMood = LevelSetting.Instance.levelMood;
 
         Initiate.Fade(targetScene, Color.black, 2.0f);
+        Player.Instance.allowInteractions = false;
 
         if (SpawnManager.Instance == null)
         {

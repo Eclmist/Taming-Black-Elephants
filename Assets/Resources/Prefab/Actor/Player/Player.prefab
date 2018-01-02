@@ -113,7 +113,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1135704312642950}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.139, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4298720033231526}
@@ -166,7 +166,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.29
+  m_Radius: 0.26
 --- !u!95 &95716710410368438
 Animator:
   serializedVersion: 3
@@ -197,6 +197,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 0.473
   debugMode: 0
+  useJoystick: 1
+  allowInteractions: 1
   colliderTransform: {fileID: 4632876603743804}
 --- !u!212 &212406849420775924
 SpriteRenderer:

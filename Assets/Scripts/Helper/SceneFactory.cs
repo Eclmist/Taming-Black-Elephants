@@ -26,7 +26,10 @@ public class SceneFactory {
         else
         {
             player = Object.Instantiate(Resources.Load("Prefab/Actor/Player/Player") as GameObject);
-            player.transform.position = LevelSetting.Instance.debugSpawnPoint;
+
+            if (LevelSetting.Instance != null)
+                player.transform.position = LevelSetting.Instance.debugSpawnPoint;
+
             Player.Instance.UndoMoveTo();
         }
     }
@@ -42,7 +45,9 @@ public class SceneFactory {
         else
         {
             musicPlayer = Object.Instantiate(Resources.Load("Prefab/Audio/Jukebox") as GameObject);
-            musicPlayer.GetComponent<AudioManager>().PlayBGM(LevelSetting.Instance.levelMood);
+
+            if (LevelSetting.Instance != null)
+                musicPlayer.GetComponent<AudioManager>().PlayBGM(LevelSetting.Instance.levelMood);
         }
 
     }

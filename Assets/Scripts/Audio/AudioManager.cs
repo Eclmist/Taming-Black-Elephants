@@ -63,6 +63,7 @@ public class AudioManager : MonoBehaviour
         if (LevelSetting.Instance.levelMood == LevelSetting.lastKnownMood)
             return; // Keep playing the same bgm without interuptions
 
+        StopAllCoroutines();
         StartCoroutine(FakeCrossfadeAudio(jukebox, BGMLookup(LevelSetting.Instance.levelMood), 1));
     }
 

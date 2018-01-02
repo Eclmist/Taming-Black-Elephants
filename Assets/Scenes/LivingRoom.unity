@@ -890,12 +890,12 @@ Prefab:
     - target: {fileID: 224242506782246950, guid: 5d91d5a536e48f84d9ce8ce3b6fc569e,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 575.5
+      value: 484.5
       objectReference: {fileID: 0}
     - target: {fileID: 224242506782246950, guid: 5d91d5a536e48f84d9ce8ce3b6fc569e,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 293
+      value: 272.5
       objectReference: {fileID: 0}
     - target: {fileID: 224242506782246950, guid: 5d91d5a536e48f84d9ce8ce3b6fc569e,
         type: 2}
@@ -9447,7 +9447,7 @@ MonoBehaviour:
   rightBound: 13.01
   topBound: 5.97
   bottomBound: -13.01
-  levelMood: 3
+  levelMood: 1
   debugSpawnPoint: {x: 2.11, y: -3.07}
 --- !u!114 &1775132669
 MonoBehaviour:
