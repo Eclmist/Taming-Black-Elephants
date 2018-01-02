@@ -83,8 +83,6 @@ public class AudioManager : MonoBehaviour
         while (Mathf.Abs(audioSource.volume - targetVolume) > 0)
         {
             audioSource.volume -= (startVolume - targetVolume) * Time.deltaTime / FadeTime;
-            Debug.Log(audioSource.volume + "  " + targetVolume);
-
             yield return null;
         }
     }
