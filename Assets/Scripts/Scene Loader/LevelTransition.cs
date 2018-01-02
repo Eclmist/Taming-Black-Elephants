@@ -30,6 +30,9 @@ public class LevelTransition : MonoBehaviour, IInteractable {
 
     public void OnTriggerEnter2D(Collider2D other)
     {
+        if (SpawnManager.currentScene == targetScene)
+            return;
+
         if (other.tag == "Player")
         {
             Interact();
@@ -43,8 +46,10 @@ public class LevelTransition : MonoBehaviour, IInteractable {
 
     private void LoadScene()
     {
-        if (SpawnManager.currentScene == targetScene)
-            return;
+
+        // Handle persistent BGM
+
+
 
         Initiate.Fade(targetScene, Color.black, 2.0f);
 

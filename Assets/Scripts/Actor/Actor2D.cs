@@ -6,7 +6,7 @@ using UnityEngine.Serialization;
 [RequireComponent(typeof(Rigidbody2D))]
 public class Actor2D : MonoBehaviour 
 {
-    protected Rigidbody2D rigidbody;
+    protected Rigidbody2D rb;
     protected Animator animator;
 
     // Movement
@@ -22,12 +22,12 @@ public class Actor2D : MonoBehaviour
 
     protected virtual void Awake()
     {
-        rigidbody = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
 
         animator = GetComponentInChildren<Animator>();
 
-        rigidbody.gravityScale = 0;
-        rigidbody.drag = 5;
+        rb.gravityScale = 0;
+        rb.drag = 5;
 
         targetPosition = transform.position;
         movementBias = 0.1F;
@@ -53,8 +53,8 @@ public class Actor2D : MonoBehaviour
 
     protected virtual void AnimatorUpdate()
     {
-        float horizontal = rigidbody.velocity.x;
-        float vertical = rigidbody.velocity.y;
+        float horizontal = rb.velocity.x;
+        float vertical = rb.velocity.y;
 
         if (Mathf.Abs(horizontal) > Mathf.Abs(vertical))
             vertical = 0;
@@ -63,10 +63,10 @@ public class Actor2D : MonoBehaviour
 
         animator.SetFloat("Horizontal", horizontal);
         animator.SetFloat("Vertical", vertical);
-        animator.SetFloat("Magnitude", rigidbody.velocity.sqrMagnitude);
+        animator.SetFloat("Magnitude", rb.velocity.sqrMagnitude);
 
 
-        if (rigidbody.velocity.sqrMagnitude < 0.01F)
+        if (rb.velocity.sqrMagnitude < 0.01F)
             animator.speed = 0;
         else
             animator.speed = 1;
@@ -78,7 +78,7 @@ public class Actor2D : MonoBehaviour
 
         if (movementVector.magnitude > movementBias)
         {
-            rigidbody.velocity = movementVector.normalized * moveSpeed * internalMoveSpeedMultiplier;
+            rb.velocity = movementVector.normalized * moveSpeed * internalMoveSpeedMultiplier;
         }
         else
         {

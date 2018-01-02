@@ -7,7 +7,6 @@ public class Player : Actor2D
     public static Player Instance;
 
     [SerializeField] private Transform colliderTransform;
-    private float lastFrameSpeed = 0;
 
     public new Transform transform 
     {

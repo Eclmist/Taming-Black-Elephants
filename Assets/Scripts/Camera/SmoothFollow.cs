@@ -21,8 +21,6 @@ public class SmoothFollow : MonoBehaviour
     
 
 	private Vector3 _smoothDampVelocity;
-	private float startingPlayerHeight;
-
 	private Vector3 cameraWorldRect;
 	private Vector3 cameraBotLeft;
 	private Vector3 cameraTopRight;
@@ -36,8 +34,6 @@ public class SmoothFollow : MonoBehaviour
     }
 
     void Start() {
-		startingPlayerHeight = target.position.y;
-
 		cameraTopRight = Camera.main.ScreenToWorldPoint(new Vector3(Camera.main.pixelWidth, Camera.main.pixelHeight, 10));
 		cameraBotLeft = Camera.main.ScreenToWorldPoint(new Vector3(0, 0, 10));
 
@@ -61,7 +57,6 @@ public class SmoothFollow : MonoBehaviour
 
 
 	private void OnDrawGizmos() {
-		Vector3 cameraWorldRect;
 		Vector3 cameraBotLeft;
 		Vector3 cameraTopRight;
 

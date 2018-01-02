@@ -2,29 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AudioManager : MonoBehaviour {
+public class AudioManager
+{
 
-    public static AudioManager Instance;
-
-    void Awake()
+    [RuntimeInitializeOnLoadMethod]
+    static void OnRuntimeMethodLoad()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-        }
-        else
-        {
-            Destroy(this);
-        }
+        Debug.Log("After scene is loaded and game is running");
     }
-
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }
+

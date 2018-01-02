@@ -18,8 +18,6 @@ public class DialogueEventManagerEditor : Editor
 
         list = new ReorderableList(serializedObject, prop, true, true, true, true);
 
-        List<float> heights = new List<float>(prop.arraySize);
-
         list.elementHeightCallback = (index) => {
 
             SerializedProperty ue = 
