@@ -5,14 +5,15 @@ using UnityEngine;
 public class LevelSetting : MonoBehaviour {
 
 	public static LevelSetting Instance;
+    public static MoodMusic.Mood lastKnownMood = MoodMusic.Mood.None;
 
     public float leftBound;
     public float rightBound;
     public float topBound;
     public float bottomBound;
 
-    public AudioSource levelBGM;
-
+    public MoodMusic.Mood levelMood;
+    public Vector2 debugSpawnPoint;
 
     // Use this for initialization
     void Awake () {
@@ -33,6 +34,9 @@ public class LevelSetting : MonoBehaviour {
         Debug.DrawLine(top + rightBound * Vector3.right, bot + rightBound * Vector3.right, Color.red);
         Debug.DrawLine(new Vector3(leftBound, topBound, 0), new Vector3(rightBound, topBound, 0), Color.blue);
         Debug.DrawLine(new Vector3(leftBound, bottomBound, 0), new Vector3(rightBound, bottomBound, 0), Color.red);
+
+        Gizmos.color = Color.green;
+        Gizmos.DrawSphere(debugSpawnPoint, 0.2F);
     }
 
     private void OnDestroy() {

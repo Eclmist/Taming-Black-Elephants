@@ -6,7 +6,7 @@ public class SmoothFollow : MonoBehaviour
 {
     public Transform target
     {
-        get { return Player.Instance.transform; }
+        get { return (Player.Instance == null) ? transform : Player.Instance.transform; }
     }
 
 	public float smoothDampTime = 0.2f;

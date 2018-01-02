@@ -70,7 +70,7 @@ public class SpawnManager : MonoBehaviour
         }
         else
         {
-            existingPlayerObj = Instantiate(Resources.Load("Player") as GameObject,
+            existingPlayerObj = Instantiate(Resources.Load("Prefab/Actor/Player/Player") as GameObject,
                 targetSpawnPos, Quaternion.identity);
         }
 

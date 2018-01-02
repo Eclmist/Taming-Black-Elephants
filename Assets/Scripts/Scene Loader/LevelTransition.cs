@@ -11,9 +11,13 @@ public class LevelTransition : MonoBehaviour, IInteractable {
     public int targetIndex;
 
     public bool doConfirmationPrompt;
+    public bool ignoreCollisionTrigger;
 
     public void Interact()
     {
+        if (SpawnManager.currentScene == targetScene)
+            return;
+
         if (doConfirmationPrompt)
         {
             DialogueUIManager.Instance.ShowGenericOptions
@@ -30,6 +34,9 @@ public class LevelTransition : MonoBehaviour, IInteractable {
 
     public void OnTriggerEnter2D(Collider2D other)
     {
+        if (ignoreCollisionTrigger)
+            return;
+
         if (SpawnManager.currentScene == targetScene)
             return;
 
@@ -48,8 +55,7 @@ public class LevelTransition : MonoBehaviour, IInteractable {
     {
 
         // Handle persistent BGM
-
-
+        LevelSetting.lastKnownMood = LevelSetting.Instance.levelMood;
 
         Initiate.Fade(targetScene, Color.black, 2.0f);
 

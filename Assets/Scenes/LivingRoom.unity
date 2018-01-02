@@ -804,8 +804,8 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.5467448, y: 1.080905}
-      - {x: -0.4829421, y: 0.48901224}
+    - - {x: 0.5227561, y: 0.7750499}
+      - {x: -0.4829421, y: 0.3150947}
       - {x: -0.4842348, y: 0.043903112}
       - {x: 0.52345085, y: 0.036659956}
 --- !u!1001 &426470663
@@ -5588,7 +5588,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 686412064}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.5, y: -5.5, z: 0}
+  m_LocalPosition: {x: -3.5, y: -6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2115268132}
@@ -5608,6 +5608,7 @@ MonoBehaviour:
   targetScene: Bathroom
   targetIndex: 0
   doConfirmationPrompt: 0
+  ignoreCollisionTrigger: 0
 --- !u!61 &686412067
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8117,7 +8118,7 @@ PolygonCollider2D:
   m_Points:
     m_Paths:
     - - {x: 0.53612185, y: 0.17794609}
-      - {x: -0.49356556, y: 0.24468207}
+      - {x: -0.49356556, y: -0.10315299}
       - {x: -0.4948573, y: -0.8590553}
       - {x: 0.52345085, y: -0.49449205}
 --- !u!1 &1400994086
@@ -9377,7 +9378,8 @@ MonoBehaviour:
   rightBound: 13.01
   topBound: 5.97
   bottomBound: -13.01
-  levelBGM: {fileID: 0}
+  levelMood: 3
+  debugSpawnPoint: {x: 2.11, y: -3.07}
 --- !u!114 &1775132669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11225,7 +11227,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2127315618}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.5, y: -3, z: 0}
+  m_LocalPosition: {x: 6, y: -3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2115268132}
@@ -11245,6 +11247,7 @@ MonoBehaviour:
   targetScene: Bedroom
   targetIndex: 0
   doConfirmationPrompt: 0
+  ignoreCollisionTrigger: 0
 --- !u!61 &2127315621
 BoxCollider2D:
   m_ObjectHideFlags: 0
