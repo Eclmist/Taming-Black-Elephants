@@ -11,6 +11,9 @@ public class LevelSetting : MonoBehaviour {
     public float topBound;
     public float bottomBound;
 
+    public AudioSource levelBGM;
+
+
     // Use this for initialization
     void Awake () {
 		if (Instance != null) {

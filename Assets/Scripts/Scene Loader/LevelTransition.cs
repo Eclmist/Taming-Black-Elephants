@@ -4,17 +4,32 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Collider2D))]
-public class LevelTransition : MonoBehaviour {
+public class LevelTransition : MonoBehaviour, IInteractable {
 
     public string targetScene = "";
     public int targetIndex;
+
+    public bool doConfirmationPrompt;
+
+    public void Interact()
+    {
+        if (doConfirmationPrompt)
+        {
+            DialogueUIManager.Instance.ShowGenericOptions
+            (
+                new GenericAction("Go to " + targetScene + "?", LoadScene),
+                new GenericAction("Go to " + targetScene + "?", null)
+            );
+        }
+
+            LoadScene();
+    }
 
     public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Player")
         {
-            if (SpawnManager.currentScene != targetScene)
-            LoadScene();
+            Interact();
         }
     }
 
@@ -25,6 +40,9 @@ public class LevelTransition : MonoBehaviour {
 
     private void LoadScene()
     {
+        if (SpawnManager.currentScene == targetScene)
+            return;
+
         Initiate.Fade(targetScene, Color.black, 2.0f);
 
         if (SpawnManager.Instance == null)

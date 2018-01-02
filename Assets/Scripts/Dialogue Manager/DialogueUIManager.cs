@@ -94,6 +94,8 @@ public class DialogueUIManager : MonoBehaviour
         StartCoroutine(TypewriterCoroutine(message, speed));
     }
 
+    // Shows dialogue options, used in the dialogue manager pipeline. For Generic user confirmation options,
+    // use ShowGenericOptions() instead.
     public void ShowOptions(string[] options)
     {
         selectedOptionIndex = -1;
@@ -108,6 +110,16 @@ public class DialogueUIManager : MonoBehaviour
         }
 
         buttonCanvasGroup.alpha = 1;
+    }
+
+    public void ShowGenericOptions(params GenericAction[] callbacks)
+    {
+        for (int i = 0; i < callbacks.Length; i++)
+        {
+            Button b = Instantiate(optionsButtonPrefab, buttonContainer).GetComponent<Button>();
+            b.GetComponentInChildren<Text>().text = callbacks[i].optionText;
+            b.onClick.AddListener(callbacks[i].callback);
+        }
     }
 
     public int GetSelectedOptionIndex()
@@ -148,5 +160,17 @@ public class DialogueUIManager : MonoBehaviour
     public void SetFreezeTime(bool active)
     {
         freezeTime = active;
+    }
+}
+
+public struct GenericAction
+{
+    public string optionText;
+    public UnityAction callback;
+
+    public GenericAction(string text, UnityAction callb)
+    {
+        optionText = text;
+        callback = callb;
     }
 }

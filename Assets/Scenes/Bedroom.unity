@@ -1953,6 +1953,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114192153967067090, guid: 74eb83a16e824704d8f0eccaf7f06232,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114192153967067090, guid: 74eb83a16e824704d8f0eccaf7f06232,
+        type: 2}
+      propertyPath: debugMode
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 74eb83a16e824704d8f0eccaf7f06232, type: 2}
   m_IsPrefabParent: 0
@@ -4940,6 +4950,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetScene: LivingRoom
   targetIndex: 0
+  doConfirmationPrompt: 1
 --- !u!61 &1525173363
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5256,6 +5267,7 @@ MonoBehaviour:
   rightBound: 7.33
   topBound: 6.01
   bottomBound: -3.98
+  levelBGM: {fileID: 1264122643}
 --- !u!114 &1775132669
 MonoBehaviour:
   m_ObjectHideFlags: 0
