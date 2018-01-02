@@ -5267,7 +5267,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 522e6928d46e1c747ab682eb5329283c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textSpeed: 0.961
+  textSpeed: 1
   autoAdvance: 0
   freezeTime: 1
   dialogueCanvas: {fileID: 11400000, guid: 57363e5d4a8dfbe45a59223c3204a3ef, type: 2}
