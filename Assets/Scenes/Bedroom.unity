@@ -5473,7 +5473,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetScene: LivingRoom
   targetIndex: 0
-  doConfirmationPrompt: 1
+  doConfirmationPrompt: 0
   ignoreCollisionTrigger: 0
 --- !u!61 &1525173363
 BoxCollider2D:
