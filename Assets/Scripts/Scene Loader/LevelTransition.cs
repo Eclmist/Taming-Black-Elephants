@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -17,12 +18,14 @@ public class LevelTransition : MonoBehaviour, IInteractable {
         {
             DialogueUIManager.Instance.ShowGenericOptions
             (
-                new GenericAction("Go to " + targetScene + "?", LoadScene),
-                new GenericAction("Go to " + targetScene + "?", null)
+                new GenericAction("Go to " + Regex.Replace(targetScene, "(\\B[A-Z])", " $1"), LoadScene),
+                new GenericAction("Back", null)
             );
         }
-
+        else
+        {
             LoadScene();
+        }
     }
 
     public void OnTriggerEnter2D(Collider2D other)

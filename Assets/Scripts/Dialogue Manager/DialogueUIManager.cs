@@ -114,11 +114,34 @@ public class DialogueUIManager : MonoBehaviour
 
     public void ShowGenericOptions(params GenericAction[] callbacks)
     {
+        ToggleDialogueUI(true);
+        canvasGroup.alpha = 0;  // We still want to freetime and generally use the toggleDialogueUI function, but
+                                // then we want to hide the Message box and etc
+        buttonCanvasGroup.alpha = 1;
+
         for (int i = 0; i < callbacks.Length; i++)
         {
             Button b = Instantiate(optionsButtonPrefab, buttonContainer).GetComponent<Button>();
             b.GetComponentInChildren<Text>().text = callbacks[i].optionText;
-            b.onClick.AddListener(callbacks[i].callback);
+            b.onClick.AddListener(ShowGenericOptionsCleanup);
+
+            if (callbacks[i].callback != null)
+                b.onClick.AddListener(callbacks[i].callback);
+        }
+    }
+
+    private void ShowGenericOptionsCleanup()
+    {
+        ToggleDialogueUI(false);
+        buttonCanvasGroup.alpha = 0;
+        RemoveAllButtons();
+    }
+
+    private void RemoveAllButtons()
+    {
+        foreach (Transform child in buttonContainer.transform)
+        {
+            Destroy(child.gameObject);
         }
     }
 
@@ -130,11 +153,7 @@ public class DialogueUIManager : MonoBehaviour
     {
         selectedOptionIndex = index;
         buttonCanvasGroup.alpha = 0;
-
-        foreach (Transform child in buttonContainer.transform)
-        {
-            Destroy(child.gameObject);
-        }
+        RemoveAllButtons();
     }
 
     public void ToggleDialogueUI(bool active)
