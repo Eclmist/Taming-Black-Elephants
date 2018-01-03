@@ -329,12 +329,12 @@ Prefab:
     - target: {fileID: 224242506782246950, guid: 5d91d5a536e48f84d9ce8ce3b6fc569e,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 575.5
+      value: 494
       objectReference: {fileID: 0}
     - target: {fileID: 224242506782246950, guid: 5d91d5a536e48f84d9ce8ce3b6fc569e,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 293
+      value: 278
       objectReference: {fileID: 0}
     - target: {fileID: 224242506782246950, guid: 5d91d5a536e48f84d9ce8ce3b6fc569e,
         type: 2}
@@ -4414,7 +4414,7 @@ MonoBehaviour:
   targetScene: LivingRoom
   targetIndex: 2
   doConfirmationPrompt: 1
-  ignoreCollisionTrigger: 1
+  ignoreCollisionTrigger: 0
 --- !u!61 &1525173363
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4731,7 +4731,7 @@ MonoBehaviour:
   rightBound: 7.33
   topBound: 6.01
   bottomBound: -3.98
-  levelMood: 1
+  levelMood: 3
   debugSpawnPoint: {x: -0.4, y: 0}
 --- !u!114 &1775132669
 MonoBehaviour:

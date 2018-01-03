@@ -272,6 +272,7 @@
     <Compile Include="Assets\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
     <Compile Include="Assets\Scripts\Actor\Actor2D.cs" />
     <Compile Include="Assets\Scripts\Actor\Player.cs" />
+    <Compile Include="Assets\Scripts\Audio\AudioManager.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraController2D.cs" />
     <Compile Include="Assets\Scripts\Camera\SmoothFollow.cs" />
     <Compile Include="Assets\Scripts\Dialogue Manager\DialogueButton.cs" />
@@ -288,15 +289,21 @@
     <Compile Include="Assets\Scripts\Dialogue Manager\Extensions\Nodes\DialogueStartNode.cs" />
     <Compile Include="Assets\Scripts\Dialogue Manager\Extensions\Utility\AudioUtils.cs" />
     <Compile Include="Assets\Scripts\Helper\CoroutineUtil.cs" />
+    <Compile Include="Assets\Scripts\Helper\SceneFactory.cs" />
     <Compile Include="Assets\Scripts\Interactables\IInteractable.cs" />
-    <Compile Include="Assets\Scripts\Interactables\LevelTransition.cs" />
+    <Compile Include="Assets\Scripts\Joystick\Joystick.cs" />
     <Compile Include="Assets\Scripts\Level\LevelSetting.cs" />
+    <Compile Include="Assets\Scripts\Objects\HintArrow.cs" />
+    <Compile Include="Assets\Scripts\Objects\Item.cs" />
+    <Compile Include="Assets\Scripts\Objects\Sprite_Pulse.cs" />
     <Compile Include="Assets\Scripts\Scene Loader\Fader.cs" />
     <Compile Include="Assets\Scripts\Scene Loader\Initiate.cs" />
     <Compile Include="Assets\Scripts\Scene Loader\LevelPortalCollection.cs" />
+    <Compile Include="Assets\Scripts\Scene Loader\LevelTransition.cs" />
     <Compile Include="Assets\Scripts\Scene Loader\SpawnManager.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Graphics\Shaders\Outline2D.shader" />
     <None Include="Assets\Graphics\Shaders\SimpleGrabPassBlur.shader" />
     <None Include="Assets\Plugins\Node_Editor\Resources\LineShader.shader" />
     <None Include="Assets\Plugins\Node_Editor\Utilities\link.xml" />

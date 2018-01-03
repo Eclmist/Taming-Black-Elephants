@@ -280,6 +280,7 @@
     <Compile Include="Assets\Plugins\Editor\Node_Editor\RTNodeEditorInspector.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Graphics\Shaders\Outline2D.shader" />
     <None Include="Assets\Graphics\Shaders\SimpleGrabPassBlur.shader" />
     <None Include="Assets\Plugins\Node_Editor\Resources\LineShader.shader" />
     <None Include="Assets\Plugins\Node_Editor\Utilities\link.xml" />

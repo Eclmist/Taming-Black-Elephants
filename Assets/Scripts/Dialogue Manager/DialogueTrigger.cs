@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DialogueTrigger : MonoBehaviour, IInteractable 
+public class DialogueTrigger : Item, IInteractable 
 {
     [SerializeField] private int dialogID;
 
-    public void Interact()
+    public override void Interact()
     {
         if (DialogueManager.Instance == null)
         {
