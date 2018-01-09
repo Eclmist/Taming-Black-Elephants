@@ -21,9 +21,10 @@ public class Inventory : MonoBehaviour
     [SerializeField] protected List<ItemData> itemContainer = new List<ItemData>(inventoryMaxSize);
 
     private InventoryUI inventoryUI;
+    private Animator itemPickupAnim;
 
     // Returns true if success, false if got problem
-    public bool AddToInventory(Item item, int amount = 1)
+    public bool AddToInventory(Item item, int amount = 1, bool showEffect = true)
     {
         ItemData data = new ItemData(item.Sprite, item.name);
 
@@ -35,6 +36,14 @@ public class Inventory : MonoBehaviour
         for ( int i = 0; i < amount; i++)
             itemContainer.Add(data);
 
+
+        if (showEffect)
+        {
+            if (!inventoryUI)
+                inventoryUI = FindObjectOfType<InventoryUI>();
+
+            inventoryUI.itemObtainedAnim.SetTrigger("Enable");
+        }
         return true;
     }
 

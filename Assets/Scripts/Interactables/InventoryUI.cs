@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class InventoryUI : MonoBehaviour 
 {
 
+    public Animator itemObtainedAnim;
+
     [SerializeField] private Image[] slots;
     
     private Inventory inventoryReference;
