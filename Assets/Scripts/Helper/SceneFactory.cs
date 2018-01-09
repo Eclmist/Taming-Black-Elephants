@@ -13,6 +13,8 @@ public class SceneFactory {
         SetupPlayer();
 
         SetupBGM();
+
+        SetupEventManager();
     }
 
     static void SetupPlayer()
@@ -50,5 +52,19 @@ public class SceneFactory {
                 musicPlayer.GetComponent<AudioManager>().PlayBGM(LevelSetting.Instance.levelMood);
         }
 
+    }
+
+    static void SetupEventManager()
+    {
+        GameObject eventManager = GameObject.Find("DialogueEventHandler");
+
+        if (eventManager != null)
+        {
+            return;
+        }
+        else
+        {
+            eventManager = Object.Instantiate(Resources.Load("Prefab/Dialogue/DialogueEventHandler") as GameObject);
+        }
     }
 }
