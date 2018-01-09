@@ -226,6 +226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99d8daf539dd27c4c9fe8bb1bf5da180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
   dialogID: 9
 --- !u!61 &80023272
 BoxCollider2D:
@@ -293,6 +294,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99d8daf539dd27c4c9fe8bb1bf5da180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
   dialogID: 11
 --- !u!61 &106144254
 BoxCollider2D:
@@ -360,6 +362,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99d8daf539dd27c4c9fe8bb1bf5da180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
   dialogID: 9
 --- !u!61 &142440381
 BoxCollider2D:
@@ -518,6 +521,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99d8daf539dd27c4c9fe8bb1bf5da180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
   dialogID: 11
 --- !u!61 &190378214
 BoxCollider2D:
@@ -585,6 +589,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99d8daf539dd27c4c9fe8bb1bf5da180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
   dialogID: 11
 --- !u!61 &190601520
 BoxCollider2D:
@@ -652,6 +657,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99d8daf539dd27c4c9fe8bb1bf5da180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
   dialogID: 2
 --- !u!61 &213298022
 BoxCollider2D:
@@ -849,6 +855,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99d8daf539dd27c4c9fe8bb1bf5da180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
   dialogID: 3
 --- !u!61 &409711650
 BoxCollider2D:
@@ -885,12 +892,12 @@ Prefab:
     - target: {fileID: 224242506782246950, guid: 5d91d5a536e48f84d9ce8ce3b6fc569e,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 512.5
+      value: 412.5
       objectReference: {fileID: 0}
     - target: {fileID: 224242506782246950, guid: 5d91d5a536e48f84d9ce8ce3b6fc569e,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 288.5
+      value: 232
       objectReference: {fileID: 0}
     - target: {fileID: 224242506782246950, guid: 5d91d5a536e48f84d9ce8ce3b6fc569e,
         type: 2}
@@ -1015,27 +1022,27 @@ Prefab:
     - target: {fileID: 224260051604238870, guid: 5d91d5a536e48f84d9ce8ce3b6fc569e,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 150.20801
+      value: 0.000030517578
       objectReference: {fileID: 0}
     - target: {fileID: 224412442837081904, guid: 5d91d5a536e48f84d9ce8ce3b6fc569e,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: -150.20804
+      value: -250.34665
       objectReference: {fileID: 0}
     - target: {fileID: 224436564614971936, guid: 5d91d5a536e48f84d9ce8ce3b6fc569e,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -187.76001
       objectReference: {fileID: 0}
     - target: {fileID: 224675210585629632, guid: 5d91d5a536e48f84d9ce8ce3b6fc569e,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: -300.41605
+      value: -281.63995
       objectReference: {fileID: 0}
     - target: {fileID: 224554974119236478, guid: 5d91d5a536e48f84d9ce8ce3b6fc569e,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 300.41602
+      value: 345.41998
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5d91d5a536e48f84d9ce8ce3b6fc569e, type: 2}
@@ -6003,6 +6010,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99d8daf539dd27c4c9fe8bb1bf5da180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
   dialogID: 9
 --- !u!61 &693414943
 BoxCollider2D:
@@ -6144,6 +6152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99d8daf539dd27c4c9fe8bb1bf5da180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
   dialogID: 3
 --- !u!61 &718310314
 BoxCollider2D:
@@ -6211,6 +6220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99d8daf539dd27c4c9fe8bb1bf5da180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
   dialogID: 8
 --- !u!61 &719724652
 BoxCollider2D:
@@ -6686,6 +6696,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99d8daf539dd27c4c9fe8bb1bf5da180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
   dialogID: 11
 --- !u!61 &1060976091
 BoxCollider2D:
@@ -6753,6 +6764,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99d8daf539dd27c4c9fe8bb1bf5da180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
   dialogID: 2
 --- !u!61 &1106703692
 BoxCollider2D:
@@ -7031,6 +7043,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99d8daf539dd27c4c9fe8bb1bf5da180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
   dialogID: 2
 --- !u!61 &1136523793
 BoxCollider2D:
@@ -7098,6 +7111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99d8daf539dd27c4c9fe8bb1bf5da180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
   dialogID: 4
 --- !u!61 &1136978675
 BoxCollider2D:
@@ -7275,6 +7289,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99d8daf539dd27c4c9fe8bb1bf5da180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
   dialogID: 1
 --- !u!61 &1190826992
 BoxCollider2D:
@@ -7519,6 +7534,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99d8daf539dd27c4c9fe8bb1bf5da180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
   dialogID: 15
 --- !u!61 &1241616727
 BoxCollider2D:
@@ -8615,6 +8631,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99d8daf539dd27c4c9fe8bb1bf5da180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
   dialogID: 2
 --- !u!61 &1400994089
 BoxCollider2D:
@@ -9459,6 +9476,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99d8daf539dd27c4c9fe8bb1bf5da180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
   dialogID: 7
 --- !u!61 &1501122030
 BoxCollider2D:
@@ -9599,6 +9617,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99d8daf539dd27c4c9fe8bb1bf5da180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
   dialogID: 10
 --- !u!61 &1554467453
 BoxCollider2D:
@@ -9784,6 +9803,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99d8daf539dd27c4c9fe8bb1bf5da180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
   dialogID: 0
 --- !u!61 &1681357804
 BoxCollider2D:
@@ -9851,6 +9871,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99d8daf539dd27c4c9fe8bb1bf5da180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
   dialogID: 9
 --- !u!61 &1683418334
 BoxCollider2D:
@@ -10068,6 +10089,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99d8daf539dd27c4c9fe8bb1bf5da180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
   dialogID: 2
 --- !u!61 &1832323830
 BoxCollider2D:
@@ -10135,6 +10157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99d8daf539dd27c4c9fe8bb1bf5da180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
   dialogID: 11
 --- !u!61 &1841988541
 BoxCollider2D:
@@ -10276,6 +10299,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99d8daf539dd27c4c9fe8bb1bf5da180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
   dialogID: 11
 --- !u!61 &1873745941
 BoxCollider2D:
@@ -10343,6 +10367,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99d8daf539dd27c4c9fe8bb1bf5da180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
   dialogID: 15
 --- !u!61 &1940784439
 BoxCollider2D:
@@ -11786,6 +11811,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99d8daf539dd27c4c9fe8bb1bf5da180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
   dialogID: 3
 --- !u!61 &2041809429
 BoxCollider2D:
@@ -11853,6 +11879,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99d8daf539dd27c4c9fe8bb1bf5da180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
   dialogID: 8
 --- !u!61 &2055104682
 BoxCollider2D:
@@ -12092,6 +12119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99d8daf539dd27c4c9fe8bb1bf5da180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
   dialogID: 9
 --- !u!61 &2131875286
 BoxCollider2D:

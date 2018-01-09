@@ -2,11 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Item : MonoBehaviour, IInteractable 
+public abstract class Item : MonoBehaviour, IInteractable, IItem
 {
     public abstract void Interact();
 
-    protected string hintResourceDir = "Prefab/Hint/";
+    [SerializeField] protected Sprite sprite;
+
+    private string name = "Generic Item";
+
+    private string hintResourceDir = "Prefab/Hint/";
+
+    public Sprite Sprite
+    {
+        get { return sprite; }
+    }
 
     protected void Start () 
 	{
@@ -16,6 +25,11 @@ public abstract class Item : MonoBehaviour, IInteractable
 	{
 		
 	}
+
+    public string GetName()
+    {
+        return name;
+    }
 
     public virtual void Hint()
     {
@@ -42,5 +56,10 @@ public abstract class Item : MonoBehaviour, IInteractable
         {
             Destroy(hintArrow);
         }
+    }
+
+    public void AddToInventory()
+    {
+        throw new System.NotImplementedException();
     }
 }

@@ -226,6 +226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99d8daf539dd27c4c9fe8bb1bf5da180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
   dialogID: 0
 --- !u!61 &52272714
 BoxCollider2D:
@@ -293,6 +294,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99d8daf539dd27c4c9fe8bb1bf5da180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
   dialogID: 3
 --- !u!61 &57215411
 BoxCollider2D:
@@ -319,6 +321,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &241037761 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114049056918035484, guid: 5d91d5a536e48f84d9ce8ce3b6fc569e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1262040065}
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!114 &241536504 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114991734112041536, guid: 5d91d5a536e48f84d9ce8ce3b6fc569e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1262040065}
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &285246876
 GameObject:
   m_ObjectHideFlags: 0
@@ -2448,6 +2462,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99d8daf539dd27c4c9fe8bb1bf5da180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
   dialogID: 0
 --- !u!61 &592639314
 BoxCollider2D:
@@ -2547,6 +2562,12 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!114 &630614944 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114911297659645390, guid: 5d91d5a536e48f84d9ce8ce3b6fc569e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1262040065}
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1001 &655190957
 Prefab:
   m_ObjectHideFlags: 0
@@ -2702,6 +2723,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99d8daf539dd27c4c9fe8bb1bf5da180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
   dialogID: 0
 --- !u!61 &682532522
 BoxCollider2D:
@@ -3183,6 +3205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99d8daf539dd27c4c9fe8bb1bf5da180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
   dialogID: 2
 --- !u!61 &1151811762
 BoxCollider2D:
@@ -3419,6 +3442,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99d8daf539dd27c4c9fe8bb1bf5da180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
   dialogID: 3
 --- !u!61 &1253587431
 BoxCollider2D:
@@ -3455,12 +3479,12 @@ Prefab:
     - target: {fileID: 224242506782246950, guid: 5d91d5a536e48f84d9ce8ce3b6fc569e,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 494
+      value: 412.5
       objectReference: {fileID: 0}
     - target: {fileID: 224242506782246950, guid: 5d91d5a536e48f84d9ce8ce3b6fc569e,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 278
+      value: 232
       objectReference: {fileID: 0}
     - target: {fileID: 224242506782246950, guid: 5d91d5a536e48f84d9ce8ce3b6fc569e,
         type: 2}
@@ -3589,22 +3613,22 @@ Prefab:
     - target: {fileID: 224436564614971936, guid: 5d91d5a536e48f84d9ce8ce3b6fc569e,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -187.76001
       objectReference: {fileID: 0}
     - target: {fileID: 224260051604238870, guid: 5d91d5a536e48f84d9ce8ce3b6fc569e,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 150.20801
+      value: 0.000030517578
       objectReference: {fileID: 0}
     - target: {fileID: 224554974119236478, guid: 5d91d5a536e48f84d9ce8ce3b6fc569e,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 300.41602
+      value: 345.41998
       objectReference: {fileID: 0}
     - target: {fileID: 224675210585629632, guid: 5d91d5a536e48f84d9ce8ce3b6fc569e,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: -300.41605
+      value: -281.63995
       objectReference: {fileID: 0}
     - target: {fileID: 224172348075367976, guid: 5d91d5a536e48f84d9ce8ce3b6fc569e,
         type: 2}
@@ -3614,7 +3638,27 @@ Prefab:
     - target: {fileID: 224412442837081904, guid: 5d91d5a536e48f84d9ce8ce3b6fc569e,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: -150.20804
+      value: -250.34665
+      objectReference: {fileID: 0}
+    - target: {fileID: 114167363204890756, guid: 5d91d5a536e48f84d9ce8ce3b6fc569e,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114981787105225944, guid: 5d91d5a536e48f84d9ce8ce3b6fc569e,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1673340207}
+    - target: {fileID: 114981787105225944, guid: 5d91d5a536e48f84d9ce8ce3b6fc569e,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ToggleInventory
+      objectReference: {fileID: 0}
+    - target: {fileID: 114981787105225944, guid: 5d91d5a536e48f84d9ce8ce3b6fc569e,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5d91d5a536e48f84d9ce8ce3b6fc569e, type: 2}
@@ -3732,6 +3776,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99d8daf539dd27c4c9fe8bb1bf5da180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
   dialogID: 0
 --- !u!61 &1288874183
 BoxCollider2D:
@@ -5013,6 +5058,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99d8daf539dd27c4c9fe8bb1bf5da180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
   dialogID: 3
 --- !u!61 &1436726482
 BoxCollider2D:
@@ -5559,6 +5605,28 @@ Transform:
   m_Father: {fileID: 1928018992}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1673340204 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1403013178002870, guid: 5d91d5a536e48f84d9ce8ce3b6fc569e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1262040065}
+--- !u!114 &1673340207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1673340204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c39dbd7d391f041b63dd47c4c498b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slots:
+  - {fileID: 241037761}
+  - {fileID: 1831807475}
+  - {fileID: 630614944}
+  - {fileID: 1982672032}
+  - {fileID: 241536504}
 --- !u!1 &1673609190
 GameObject:
   m_ObjectHideFlags: 0
@@ -5600,6 +5668,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99d8daf539dd27c4c9fe8bb1bf5da180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
   dialogID: 0
 --- !u!61 &1673609193
 BoxCollider2D:
@@ -5667,6 +5736,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99d8daf539dd27c4c9fe8bb1bf5da180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
   dialogID: 0
 --- !u!61 &1696619312
 BoxCollider2D:
@@ -5734,6 +5804,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99d8daf539dd27c4c9fe8bb1bf5da180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
   dialogID: 2
 --- !u!61 &1720547622
 BoxCollider2D:
@@ -5866,6 +5937,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1831807475 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114205749144817080, guid: 5d91d5a536e48f84d9ce8ce3b6fc569e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1262040065}
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &1928018990
 GameObject:
   m_ObjectHideFlags: 0
@@ -5959,6 +6036,12 @@ Transform:
   m_Father: {fileID: 1333575284}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 16.142, y: 23.499, z: 6.893}
+--- !u!114 &1982672032 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114441781502309090, guid: 5d91d5a536e48f84d9ce8ce3b6fc569e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1262040065}
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &2005012840
 GameObject:
   m_ObjectHideFlags: 0
@@ -6073,6 +6156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99d8daf539dd27c4c9fe8bb1bf5da180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
   dialogID: 1
 --- !u!61 &2040803462
 BoxCollider2D:

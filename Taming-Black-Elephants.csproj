@@ -291,11 +291,14 @@
     <Compile Include="Assets\Scripts\Helper\CoroutineUtil.cs" />
     <Compile Include="Assets\Scripts\Helper\SceneFactory.cs" />
     <Compile Include="Assets\Scripts\Interactables\IInteractable.cs" />
+    <Compile Include="Assets\Scripts\Interactables\IItem.cs" />
+    <Compile Include="Assets\Scripts\Interactables\Inventory.cs" />
+    <Compile Include="Assets\Scripts\Interactables\InventoryUI.cs" />
+    <Compile Include="Assets\Scripts\Interactables\Objects\HintArrow.cs" />
+    <Compile Include="Assets\Scripts\Interactables\Objects\Item.cs" />
+    <Compile Include="Assets\Scripts\Interactables\Objects\Sprite_Pulse.cs" />
     <Compile Include="Assets\Scripts\Joystick\Joystick.cs" />
     <Compile Include="Assets\Scripts\Level\LevelSetting.cs" />
-    <Compile Include="Assets\Scripts\Objects\HintArrow.cs" />
-    <Compile Include="Assets\Scripts\Objects\Item.cs" />
-    <Compile Include="Assets\Scripts\Objects\Sprite_Pulse.cs" />
     <Compile Include="Assets\Scripts\Scene Loader\Fader.cs" />
     <Compile Include="Assets\Scripts\Scene Loader\Initiate.cs" />
     <Compile Include="Assets\Scripts\Scene Loader\LevelPortalCollection.cs" />

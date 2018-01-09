@@ -11,10 +11,16 @@ public class Player : Actor2D
     [SerializeField] private Transform colliderTransform;
     private Joystick joystick;
 
+    private Inventory inventory;
 
     public new Transform transform 
     {
         get {return colliderTransform;}
+    }
+
+    public Inventory Inventory
+    {
+        get { return inventory; }
     }
 
     protected override void Awake()
@@ -31,6 +37,7 @@ public class Player : Actor2D
     protected virtual void Start()
     {
         joystick = FindObjectOfType<Joystick>();
+        inventory = GetComponent<Inventory>();
     }
 
     protected override void Update()
