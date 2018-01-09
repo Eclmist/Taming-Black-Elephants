@@ -2,19 +2,32 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Item : MonoBehaviour, IInteractable, IItem
+public class Item : MonoBehaviour, IInteractable, IItem
 {
-    public abstract void Interact();
+    public virtual void Interact()
+    {
+        AddToInventory();
+    }
 
     [SerializeField] protected Sprite sprite;
+    [SerializeField] protected int amount = 1;
 
-    private string name = "Generic Item";
+    [SerializeField] protected string name = "Generic Item";    // NAME IS UNIQUE ID.
+                                                                // Too lazy to write a item ID assignment window
 
     private string hintResourceDir = "Prefab/Hint/";
 
     public Sprite Sprite
     {
         get { return sprite; }
+    }
+
+    // cctor
+    public Item(Item copy)
+    {
+        sprite = copy.sprite;
+        amount = copy.amount;
+        name = copy.name;
     }
 
     protected void Start () 
@@ -60,6 +73,7 @@ public abstract class Item : MonoBehaviour, IInteractable, IItem
 
     public void AddToInventory()
     {
-        throw new System.NotImplementedException();
+        Player.Instance.Inventory.AddToInventory(this, amount);
+        Destroy(gameObject);
     }
 }

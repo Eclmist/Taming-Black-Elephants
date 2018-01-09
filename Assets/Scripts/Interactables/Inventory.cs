@@ -2,24 +2,38 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public class ItemData
+{
+    public Sprite sprite;
+    public string name;
+
+    public ItemData(Sprite s, string n)
+    {
+        sprite = s;
+        name = n;
+    }
+}
+
 public class Inventory : MonoBehaviour 
 {
     public const int inventoryMaxSize = 5;
 
-    [SerializeField] protected List<Item> itemContainer = new List<Item>(inventoryMaxSize);
+    [SerializeField] protected List<ItemData> itemContainer = new List<ItemData>(inventoryMaxSize);
 
     private InventoryUI inventoryUI;
 
     // Returns true if success, false if got problem
     public bool AddToInventory(Item item, int amount = 1)
     {
+        ItemData data = new ItemData(item.Sprite, item.name);
+
         if (itemContainer.Count + amount >= inventoryMaxSize)
         {
             return false;
         }
 
         for ( int i = 0; i < amount; i++)
-            itemContainer.Add(item);
+            itemContainer.Add(data);
 
         return true;
     }
@@ -62,7 +76,7 @@ public class Inventory : MonoBehaviour
         itemContainer.Clear();
     }
 
-    public Item GetItem(int index)
+    public ItemData GetItem(int index)
     {
         if (index >= itemContainer.Count)
         {

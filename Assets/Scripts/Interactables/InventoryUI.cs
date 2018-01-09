@@ -37,11 +37,11 @@ public class InventoryUI : MonoBehaviour
         {
             if (i < Inventory.inventoryMaxSize)
             {
-                Item itemAtIndex = inventoryReference.GetItem(i);
+                ItemData itemAtIndex = inventoryReference.GetItem(i);
 
                 if (itemAtIndex != null)
                 {
-                    slots[i].sprite = itemAtIndex.Sprite;
+                    slots[i].sprite = itemAtIndex.sprite;
                     slots[i].color = Color.white;
                 }
                 else
