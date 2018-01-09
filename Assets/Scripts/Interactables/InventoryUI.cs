@@ -40,7 +40,15 @@ public class InventoryUI : MonoBehaviour
                 Item itemAtIndex = inventoryReference.GetItem(i);
 
                 if (itemAtIndex != null)
+                {
                     slots[i].sprite = itemAtIndex.Sprite;
+                    slots[i].color = Color.white;
+                }
+                else
+                {
+                    slots[i].color = Color.clear;
+                    slots[i].sprite = null;
+                }
             }
         }
     }
