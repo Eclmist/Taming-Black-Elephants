@@ -6,7 +6,10 @@ public class Item : MonoBehaviour, IInteractable, IItem
 {
     public virtual void Interact()
     {
+
+
         AddToInventory();
+
     }
 
     [SerializeField] protected Sprite sprite;

@@ -43,6 +43,7 @@ public class Inventory : MonoBehaviour
                 inventoryUI = FindObjectOfType<InventoryUI>();
 
             inventoryUI.itemObtainedAnim.SetTrigger("Enable");
+            inventoryUI.itemName_Obtained.text = item.name + " obtained!";
         }
         return true;
     }
