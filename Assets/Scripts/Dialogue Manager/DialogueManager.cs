@@ -18,6 +18,12 @@ public class DialogueManager : MonoBehaviour
 
     private DialogueUIManager uiManager;
 
+    public DialogueNodeCanvas DialogueCanvas
+    {
+        get { return dialogueCanvas; }
+        set { dialogueCanvas = value; }
+    }
+
     protected void Awake()
     {
         if (Instance != null)
@@ -145,5 +151,6 @@ public class DialogueManager : MonoBehaviour
         }
 
         uiManager.ToggleDialogueUI(false);
+  
     }
 }

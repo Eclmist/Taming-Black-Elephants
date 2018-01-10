@@ -24,7 +24,7 @@ public class DialogueMultiOptionNode : BaseDialogueNode
     public override Vector2 MinSize { get { return new Vector2(320, 0); } }
 
     //previous node connections
-    [ConnectionKnob("Input", Direction.In, "DialogueConnector", NodeSide.Left, nodePositionOffset)]
+    [ConnectionKnob("Input", Direction.In, ConnectionCount.Max, NodeSide.Left, nodePositionOffset)]
     public ConnectionKnob inputKnob;
 
     private const int StartValue = 276;

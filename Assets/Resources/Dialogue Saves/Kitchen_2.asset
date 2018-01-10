@@ -158,8 +158,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114522632930231366}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114013268745989212}
   side: 4
@@ -350,8 +350,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114735994516418856}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114489786636744434}
   side: 4
@@ -736,8 +736,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114781725189136794}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114936244557384226}
   side: 4
@@ -791,8 +791,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114299197355414700}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114471585658232754}
   side: 4
@@ -956,8 +956,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114547864177361076}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114000362267977768}
   side: 4
@@ -1020,8 +1020,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114456144958189262}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 2
+  styleID: Default
   _connections:
   - {fileID: 114429239967206814}
   side: 4
@@ -1157,8 +1157,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114688355863279804}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114896977833031944}
   side: 4
@@ -1177,8 +1177,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114651962112366658}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114069794961777354}
   side: 4
@@ -1514,8 +1514,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114075177918592464}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 2
+  styleID: Default
   _connections:
   - {fileID: 114818473653184040}
   side: 4
@@ -1676,8 +1676,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114149154756285294}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 2
+  styleID: Default
   _connections:
   - {fileID: 114934256659688934}
   side: 4
@@ -1854,8 +1854,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114333390533688340}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114236308347626652}
   side: 4
@@ -1874,8 +1874,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114757433250796938}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114710716869649142}
   side: 4
@@ -1998,8 +1998,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114304554806771600}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114215188623164786}
   side: 4
@@ -2018,8 +2018,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114699307993749556}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114730638546777786}
   side: 4
@@ -2140,8 +2140,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114440632629063186}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114161556738610040}
   side: 4
@@ -2180,8 +2180,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114342306534615656}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 2
+  styleID: Default
   _connections:
   - {fileID: 114093058304575626}
   side: 4
@@ -2256,8 +2256,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114573632594243014}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114374193517613670}
   side: 4
@@ -2318,8 +2318,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114040488032001322}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 2
+  styleID: Default
   _connections:
   - {fileID: 114822457720666726}
   side: 4
@@ -2435,8 +2435,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114960816778135072}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114242729273488540}
   side: 4
@@ -2476,8 +2476,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114035266884094822}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114217268871644334}
   side: 4
@@ -2496,8 +2496,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114218718947932188}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114849933894478786}
   side: 4
@@ -2629,8 +2629,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114928637443378216}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114205703591519400}
   side: 4
@@ -2668,8 +2668,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114636268854862276}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114431129101811984}
   side: 4
@@ -2708,8 +2708,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114152023873847014}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114924570917646472}
   side: 4
@@ -2852,8 +2852,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114364461885153736}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114945149725596324}
   side: 4
@@ -2932,8 +2932,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114437693973150044}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114094453668053106}
   side: 4

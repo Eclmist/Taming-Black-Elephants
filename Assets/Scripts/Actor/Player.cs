@@ -8,6 +8,8 @@ public class Player : Actor2D
     public bool useJoystick = false;
     public bool allowInteractions = true;
 
+    public float playerReach = 1.5F;
+
     [SerializeField] private Transform colliderTransform;
     private Joystick joystick;
 
@@ -66,7 +68,7 @@ public class Player : Actor2D
 
                 if (interactable != null)
                 {
-                    if ((transform.position - touched.gameObject.transform.position).sqrMagnitude < 1F)
+                    if ((transform.position - touched.gameObject.transform.position).sqrMagnitude < playerReach)
                     {
                         CheckInteraction(interactable);
 

@@ -2036,7 +2036,7 @@ RectTransform:
   - {fileID: 224840425617707936}
   - {fileID: 224021681207565988}
   m_Father: {fileID: 224242506782246950}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
@@ -2074,9 +2074,9 @@ RectTransform:
   - {fileID: 4550672441094506}
   - {fileID: 224600363001117784}
   - {fileID: 224884087739451596}
-  - {fileID: 224172348075367976}
   - {fileID: 224895775930340496}
   - {fileID: 224794431591546216}
+  - {fileID: 224172348075367976}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2389,7 +2389,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1986712394171134}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -72.16163, z: 0}
+  m_LocalPosition: {x: 0, y: -72.16156, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 224884087739451596}
@@ -2397,7 +2397,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 57.57}
+  m_AnchoredPosition: {x: 0, y: 57.57007}
   m_SizeDelta: {x: 1000, y: 300}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!224 &224794431591546216
@@ -2412,7 +2412,7 @@ RectTransform:
   m_Children:
   - {fileID: 224755664505210628}
   m_Father: {fileID: 224242506782246950}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -2546,7 +2546,7 @@ RectTransform:
   - {fileID: 224009828021705888}
   - {fileID: 224765607637214080}
   m_Father: {fileID: 224242506782246950}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -2562,7 +2562,7 @@ CanvasGroup:
   m_Enabled: 1
   m_Alpha: 0
   m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
 --- !u!225 &225171709261811090
 CanvasGroup:

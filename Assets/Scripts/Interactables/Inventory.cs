@@ -58,6 +58,17 @@ public class Inventory : MonoBehaviour
         return true;
     }
 
+    public bool HasItem(string name)
+    {
+        foreach (ItemData item in itemContainer)
+        {
+            if (item.name == name)
+                return true;
+        }
+
+        return false;
+    }
+
     public bool RemoveItem(string name, int amount = 1)
     {
         if (amount <= 0)

@@ -51,6 +51,9 @@ public class DialogueCallbackNode : BaseDialogueNode
 #endif
     public override BaseDialogueNode GetNextNode()
     {
+        if (outputKnob.connections.Count <= 0)
+            return null;
+
         return outputKnob.connections[0].body as BaseDialogueNode;
     }
 }
