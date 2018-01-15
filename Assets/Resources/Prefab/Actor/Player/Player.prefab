@@ -196,7 +196,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63b1650b8b539c544b6d680db56029a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemContainer: []
 --- !u!114 &114192153967067090
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -210,8 +209,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 0.473
   debugMode: 0
-  useJoystick: 1
+  useJoystick: 0
   allowInteractions: 1
+  playerReach: 1.5
   colliderTransform: {fileID: 4632876603743804}
 --- !u!212 &212406849420775924
 SpriteRenderer:
