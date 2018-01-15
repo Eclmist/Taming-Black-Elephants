@@ -100,8 +100,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114444853674278082}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114448647243088958}
   side: 4
@@ -139,8 +139,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114885270743922518}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114641040158277964}
   side: 4
@@ -159,8 +159,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114091306534146924}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114010884883329294}
   side: 4
@@ -283,8 +283,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114307423492674842}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114570427866280382}
   side: 4
@@ -502,8 +502,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114406259533460584}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114956667066998662}
   side: 4
