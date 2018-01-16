@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using NodeEditorFramework;
 
+
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
+
 [Node (false, "Dialogue/Basic Node", typeof(DialogueNodeCanvas))]
 public class DialogueNode : BaseDialogueNode 
 {
@@ -16,6 +21,17 @@ public class DialogueNode : BaseDialogueNode
 
     [ConnectionKnob("Next", Direction.Out, "DialogueConnector", NodeSide.Right, nodePositionOffset)]
     public ConnectionKnob outputKnob;
+
+    public bool isThinking = false;
+
+    public override void NodeGUI()
+    {
+        DrawNodeGUIPrefix();
+
+        isThinking = EditorGUILayout.Toggle("ThoughtBubble?", isThinking);
+
+        DrawNodeGUISuffix();
+    }
 
     public override BaseDialogueNode GetNextNode()
     {

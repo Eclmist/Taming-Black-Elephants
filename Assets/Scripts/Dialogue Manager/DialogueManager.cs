@@ -116,7 +116,7 @@ public class DialogueManager : MonoBehaviour
         else if (node is DialogueNode)
         {
             uiManager.DisplayNewMessage(node.characterName, node.dialogText, textSpeed,
-                node.characterPotrait, node.potraitOnLeft);
+                ((DialogueNode)node).isThinking, node.characterPotrait, node.potraitOnLeft);
 
             // Get rid of 1 mouse click
             yield return null;

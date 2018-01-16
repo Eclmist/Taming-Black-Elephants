@@ -17,6 +17,12 @@ public class DialogueUIManager : MonoBehaviour
     [SerializeField] private Transform buttonContainer;
     [SerializeField] private CanvasGroup buttonCanvasGroup;
 
+    [SerializeField] private Image messageBox;
+    [SerializeField] private Image characterNameBox;
+
+    [SerializeField] private Sprite normalChatSprite;
+    [SerializeField] private Sprite thoughtBubbleSprite;
+
     private bool messageCompleted = true;
     private bool skipTyping = false;
     private bool freezeTime = false;
@@ -65,7 +71,7 @@ public class DialogueUIManager : MonoBehaviour
     }
 
     public void DisplayNewMessage(string characterName, string message, float speed,
-        Sprite portrait = null, bool portraitOnLeft = true)
+        bool isThinking = false, Sprite portrait = null, bool portraitOnLeft = true)
     {
         StopAllCoroutines();
         characterNameObj.text = characterName;
@@ -90,6 +96,9 @@ public class DialogueUIManager : MonoBehaviour
                 portraitRight.sprite = portrait;
             }
         }
+
+        messageBox.sprite = isThinking ? thoughtBubbleSprite : normalChatSprite;
+        characterNameBox.gameObject.SetActive(!isThinking);
 
         StartCoroutine(TypewriterCoroutine(message, speed));
     }

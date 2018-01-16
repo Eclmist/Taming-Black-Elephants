@@ -123,6 +123,7 @@ GameObject:
   - component: {fileID: 224397194481641940}
   - component: {fileID: 222026967967456530}
   - component: {fileID: 114409810946000920}
+  - component: {fileID: 114725305113642396}
   m_Layer: 5
   m_Name: Txt_Message
   m_TagString: Untagged
@@ -904,6 +905,11 @@ MonoBehaviour:
     type: 2}
   buttonContainer: {fileID: 224755664505210628}
   buttonCanvasGroup: {fileID: 225729156255576532}
+  messageBox: {fileID: 114530134828711918}
+  characterNameBox: {fileID: 114811763933648262}
+  normalChatSprite: {fileID: 21300022, guid: d6608a87feb4e4746aa62d488c455092, type: 3}
+  thoughtBubbleSprite: {fileID: 21300040, guid: d6608a87feb4e4746aa62d488c455092,
+    type: 3}
 --- !u!114 &114285473603564742
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1342,6 +1348,20 @@ MonoBehaviour:
   knob: {fileID: 1011800867713766}
   radius: 40
   cg: {fileID: 225490958652264514}
+--- !u!114 &114725305113642396
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1281028143268976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1573420865, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!114 &114774361237823784
 MonoBehaviour:
   m_ObjectHideFlags: 1

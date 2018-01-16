@@ -45,6 +45,9 @@ TagManager:
   - name: Infrastructure
     uniqueID: 309901741
     locked: 0
+  - name: Background
+    uniqueID: 2047450389
+    locked: 0
   - name: Furniture
     uniqueID: 1550789309
     locked: 0
