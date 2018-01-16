@@ -213,6 +213,7 @@ MonoBehaviour:
   allowInteractions: 1
   playerReach: 1.5
   colliderTransform: {fileID: 4632876603743804}
+  hitSound: {fileID: 8300000, guid: 2550a3f33f3c3274096ff0cfd6091ed5, type: 3}
 --- !u!212 &212406849420775924
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -227,7 +228,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: f7f045534d8c8fe428cfcd1d759fc728, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

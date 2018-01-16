@@ -12,9 +12,13 @@ public class LevelTransition : MonoBehaviour, IInteractable {
 
     public bool doConfirmationPrompt;
     public bool ignoreCollisionTrigger;
+    public bool enabled = true;
 
     public void Interact()
     {
+        if (!enabled)
+            return;
+
         if (SpawnManager.currentScene == targetScene)
             return;
 

@@ -11,6 +11,7 @@ public class Player : Actor2D
     public float playerReach = 1.5F;
 
     [SerializeField] private Transform colliderTransform;
+    [SerializeField] private AudioClip hitSound;
     private Joystick joystick;
 
     private Inventory inventory;
@@ -104,4 +105,10 @@ public class Player : Actor2D
         queuedInteractableObject = null;
     }
 
+    public void Die()
+    {
+        transform.parent.transform.position = LevelSetting.Instance.debugSpawnPoint;
+        AudioSource.PlayClipAtPoint(hitSound, Camera.main.transform.position, 2F);
+        UndoMoveTo();
+    }
 }

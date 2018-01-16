@@ -17,3 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SiblingRoom.unity
     guid: d1281cd722154db4f8428181254578f1
+  - enabled: 1
+    path: Assets/Scenes/CyroCorridoor.unity
+    guid: 774e60372d7f79d4d953c7c6c03b875b
+  - enabled: 1
+    path: Assets/Scenes/CyroChamber.unity
+    guid: b828eb390ed355949b4c2658e9280d53
