@@ -125,7 +125,8 @@ public class DialogueManager : MonoBehaviour
             while (uiManager.IsMessageCompletelyShown() == false)
             {
                 // Skip typewriter if mouse down
-                if (Input.GetMouseButtonDown(0) == true || Input.touchCount > 0)
+                if (Input.GetMouseButtonDown(0) == true ||
+                    (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began))
                     uiManager.SkipTypewriter();
 
                 yield return null;

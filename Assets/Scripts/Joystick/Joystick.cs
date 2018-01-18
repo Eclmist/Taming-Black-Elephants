@@ -27,16 +27,16 @@ public class Joystick : MonoBehaviour
         ShowJoystick = true;
 
         // Initial jump to position
-        if (Input.GetMouseButtonDown(0))
-        {
-            transform.position = Input.mousePosition;
-        }
-        else if (Input.touchCount > 0)
+        if (Input.touchCount > 0)
         {
             if (Input.GetTouch(0).phase == TouchPhase.Began)
             {
                 transform.position = Input.GetTouch(0).position;
             }
+        }
+        else if (Input.GetMouseButtonDown(0))
+        {
+            transform.position = Input.mousePosition;
         }
         else
         {
@@ -46,17 +46,17 @@ public class Joystick : MonoBehaviour
         // Subsequent drag
         Vector2 knobMovementVector = Vector2.zero;
 
-        if (Input.GetMouseButton(0))
-        {
-            knob.transform.position = Input.mousePosition;
-            knobMovementVector = knob.transform.position - transform.position;
-            showJoystick = true;
-        }
-        else if (Input.touchCount > 0 &&
+        if (Input.touchCount > 0 &&
             (Input.GetTouch(0).phase == TouchPhase.Stationary ||
             Input.GetTouch(0).phase == TouchPhase.Moved))
         {
             knob.transform.position = Input.GetTouch(0).position;
+            knobMovementVector = knob.transform.position - transform.position;
+            showJoystick = true;
+        }
+        else if (Input.GetMouseButton(0))
+        {
+            knob.transform.position = Input.mousePosition;
             knobMovementVector = knob.transform.position - transform.position;
             showJoystick = true;
         }

@@ -49,35 +49,25 @@ public class Player : Actor2D
 
         joystick.gameObject.SetActive(useJoystick);
 
-        if (Input.GetMouseButtonDown(0) && Time.timeScale != 0)
+        Vector2 clickPos = Vector2.zero;
+        bool firstTouchFrame = true;
+
+        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
         {
-            Vector2 clickPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            clickPos = Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
+        }
+        else if (Input.GetMouseButtonDown(0) && Time.timeScale != 0)
+        {
+            clickPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        }
+        else
+            firstTouchFrame = false;
 
+        // Movement
+        if (firstTouchFrame)
+        {
             if (!useJoystick)
-            {
                 MoveTo(clickPos);
-            }
-
-            if (Time.timeScale == 0 || !allowInteractions)
-                return;
-
-            Collider2D[] touchedAreaObjs = Physics2D.OverlapCircleAll(clickPos, 0.01F);
-
-            foreach (Collider2D touched in touchedAreaObjs)
-            {
-                IInteractable interactable = touched.GetComponent<IInteractable>();
-
-                if (interactable != null)
-                {
-                    if ((transform.position - touched.gameObject.transform.position).sqrMagnitude < playerReach)
-                    {
-                        CheckInteraction(interactable);
-
-                        break;
-                    }
-                }
-            }
-
         }
 
         if (useJoystick)
@@ -91,6 +81,29 @@ public class Player : Actor2D
                 MoveTo(transform.position + (Vector3)joystick.TouchPosition);
             }
         }
+
+
+        // Interactions
+        if (Time.timeScale == 0 || !allowInteractions)
+            return;
+
+        Collider2D[] touchedAreaObjs = Physics2D.OverlapCircleAll(clickPos, 0.01F);
+
+        foreach (Collider2D touched in touchedAreaObjs)
+        {
+            IInteractable interactable = touched.GetComponent<IInteractable>();
+
+            if (interactable != null)
+            {
+                if ((transform.position - touched.gameObject.transform.position).sqrMagnitude < playerReach)
+                {
+                    CheckInteraction(interactable);
+
+                    break;
+                }
+            }
+        }
+
     }
 
     protected void CheckInteraction(IInteractable queuedInteractableObject)
