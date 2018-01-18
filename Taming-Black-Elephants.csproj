@@ -298,8 +298,11 @@
     <Compile Include="Assets\Scripts\Interactables\Objects\Item.cs" />
     <Compile Include="Assets\Scripts\Interactables\Objects\Sprite_Pulse.cs" />
     <Compile Include="Assets\Scripts\Joystick\Joystick.cs" />
+    <Compile Include="Assets\Scripts\LaserMinigame\Laser.cs" />
     <Compile Include="Assets\Scripts\Level\LevelSetting.cs" />
     <Compile Include="Assets\Scripts\Level\Nagano Manager\LivingRoom_1.cs" />
+    <Compile Include="Assets\Scripts\Misc\CyroTrollDoor.cs" />
+    <Compile Include="Assets\Scripts\Misc\LightFlicker.cs" />
     <Compile Include="Assets\Scripts\Scene Loader\Fader.cs" />
     <Compile Include="Assets\Scripts\Scene Loader\Initiate.cs" />
     <Compile Include="Assets\Scripts\Scene Loader\LevelPortalCollection.cs" />
