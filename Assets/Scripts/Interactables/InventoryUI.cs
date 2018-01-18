@@ -59,6 +59,7 @@ public class InventoryUI : MonoBehaviour
     public void ToggleInventory()
     {
         inventoryOpen = !inventoryOpen;
+        Player.Instance.UndoMoveTo();
 
         UpdateInventoryUI();
     }
@@ -66,6 +67,7 @@ public class InventoryUI : MonoBehaviour
     public void OpenInventory()
     {
         inventoryOpen = true;
+        Player.Instance.UndoMoveTo();
 
         UpdateInventoryUI();
     }
@@ -73,6 +75,8 @@ public class InventoryUI : MonoBehaviour
     public void CloseInventory()
     {
         inventoryOpen = false;
+        Player.Instance.UndoMoveTo();
+
         UpdateInventoryUI();
     }
 }

@@ -44,7 +44,11 @@ public class Inventory : MonoBehaviour
 
             inventoryUI.itemObtainedAnim.SetTrigger("Enable");
             inventoryUI.itemName_Obtained.text = item.name + " obtained!";
+
         }
+
+        SendUIUpdateEvent();
+
         return true;
     }
 
@@ -54,7 +58,7 @@ public class Inventory : MonoBehaviour
             return false;
 
         itemContainer.RemoveAt(index);
-
+        SendUIUpdateEvent();
         return true;
     }
 
@@ -88,13 +92,15 @@ public class Inventory : MonoBehaviour
                     break;
             }
         }
-
+        SendUIUpdateEvent();
         return true;
     }
 
     public void ClearInventory()
     {
         itemContainer.Clear();
+        SendUIUpdateEvent();
+        
     }
 
     public ItemData GetItem(int index)

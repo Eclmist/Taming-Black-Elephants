@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Player : Actor2D
 {
+    //TODO: Place this in some save game manager of sorts
+    public static int gameInstance;
+
     public static Player Instance;
     public bool useJoystick = false;
     public bool allowInteractions = true;
@@ -14,7 +17,7 @@ public class Player : Actor2D
     [SerializeField] private AudioClip hitSound;
     private Joystick joystick;
 
-    private Inventory inventory;
+    private static Inventory inventory;
 
     public new Transform transform 
     {
@@ -35,19 +38,34 @@ public class Player : Actor2D
         else
             Destroy(gameObject);
 
+        DontDestroyOnLoad(gameObject);
+
+        gameInstance = Random.Range(0, int.MaxValue);
     }
 
     protected virtual void Start()
     {
         joystick = FindObjectOfType<Joystick>();
-        inventory = GetComponent<Inventory>();
+
+        if (inventory == null)
+            inventory = GetComponent<Inventory>();
     }
 
     protected override void Update()
     {
         base.Update();
 
-        joystick.gameObject.SetActive(useJoystick);
+        if (joystick == null)
+        {
+            joystick = FindObjectOfType<Joystick>();
+
+            if (joystick != null)
+                joystick.gameObject.SetActive(useJoystick);
+
+        }
+        else
+            joystick.gameObject.SetActive(useJoystick);
+
 
         Vector2 clickPos = Vector2.zero;
         bool firstTouchFrame = true;
@@ -64,12 +82,6 @@ public class Player : Actor2D
             firstTouchFrame = false;
 
         // Movement
-        if (firstTouchFrame)
-        {
-            if (!useJoystick)
-                MoveTo(clickPos);
-        }
-
         if (useJoystick)
         {
             if (joystick.TouchPosition.sqrMagnitude < 0.01F)
@@ -82,28 +94,32 @@ public class Player : Actor2D
             }
         }
 
-
-        // Interactions
-        if (Time.timeScale == 0 || !allowInteractions)
-            return;
-
-        Collider2D[] touchedAreaObjs = Physics2D.OverlapCircleAll(clickPos, 0.01F);
-
-        foreach (Collider2D touched in touchedAreaObjs)
+        if (firstTouchFrame)
         {
-            IInteractable interactable = touched.GetComponent<IInteractable>();
+            if (!useJoystick)
+                MoveTo(clickPos);
 
-            if (interactable != null)
+            // Interactions
+            if (Time.timeScale == 0 || !allowInteractions)
+                return;
+
+            Collider2D[] touchedAreaObjs = Physics2D.OverlapCircleAll(clickPos, 0.01F);
+
+            foreach (Collider2D touched in touchedAreaObjs)
             {
-                if ((transform.position - touched.gameObject.transform.position).sqrMagnitude < playerReach)
-                {
-                    CheckInteraction(interactable);
+                IInteractable interactable = touched.GetComponent<IInteractable>();
 
-                    break;
+                if (interactable != null)
+                {
+                    if ((transform.position - touched.gameObject.transform.position).sqrMagnitude < playerReach)
+                    {
+                        CheckInteraction(interactable);
+
+                        break;
+                    }
                 }
             }
         }
-
     }
 
     protected void CheckInteraction(IInteractable queuedInteractableObject)

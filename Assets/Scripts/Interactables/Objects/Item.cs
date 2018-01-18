@@ -19,6 +19,9 @@ public class Item : MonoBehaviour, IInteractable, IItem
                                                                 // Too lazy to write a item ID assignment window
 
     private string hintResourceDir = "Prefab/Hint/";
+    private static string saveDataKey = "null";
+    private const string obtainedKey = "obtained";
+    private const string inInventory = "inInventory";
 
     public Sprite Sprite
     {
@@ -35,7 +38,11 @@ public class Item : MonoBehaviour, IInteractable, IItem
 
     protected void Start () 
 	{
-	}
+        if (saveDataKey == "null")
+            saveDataKey = Player.gameInstance + "-" + name + "-";
+        else if (PlayerPrefs.GetInt(saveDataKey + obtainedKey) == 1)
+            Destroy(gameObject);
+    }
 	
 	protected void Update () 
 	{
@@ -77,6 +84,7 @@ public class Item : MonoBehaviour, IInteractable, IItem
     public void AddToInventory()
     {
         Player.Instance.Inventory.AddToInventory(this, amount);
+        PlayerPrefs.SetInt(saveDataKey + obtainedKey, 1);
         Destroy(gameObject);
     }
 }

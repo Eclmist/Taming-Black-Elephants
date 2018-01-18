@@ -58,6 +58,11 @@ public class SpawnManager : MonoBehaviour
             }
         }
 
+        if (existingPlayerObj == null)
+        {
+            existingPlayerObj = Player.Instance.gameObject;
+        }
+
         if (!foundSpawnPoint)
         {
             Debug.Log("gg no spawn point");
