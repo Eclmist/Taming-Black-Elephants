@@ -85,17 +85,24 @@ public class DialogueUIManager : MonoBehaviour
         messageCompleted = false;
         skipTyping = false;
 
-        if (portrait != null)
+        Sprite loadedPortrait = portrait;
+
+        if (loadedPortrait == null)
+        {
+            loadedPortrait = PortraitLibrary.GetPortrait(characterName);
+        }
+
+        if (loadedPortrait != null)
         {
             if (portraitOnLeft)
             {
                 portraitLeft.enabled = true;
-                portraitLeft.sprite = portrait;
+                portraitLeft.sprite = loadedPortrait;
             }
             else
             {
                 portraitRight.enabled = true;
-                portraitRight.sprite = portrait;
+                portraitRight.sprite = loadedPortrait;
             }
         }
 

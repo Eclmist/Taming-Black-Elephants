@@ -405,7 +405,7 @@ GameObject:
   - component: {fileID: 114884305594874792}
   - component: {fileID: 225052966775611292}
   m_Layer: 5
-  m_Name: Backdrop
+  m_Name: Backdrop (Dialogue Box)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -423,7 +423,7 @@ GameObject:
   - component: {fileID: 114774361237823784}
   - component: {fileID: 225729156255576532}
   m_Layer: 5
-  m_Name: Blur
+  m_Name: Blur (Button Container)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
