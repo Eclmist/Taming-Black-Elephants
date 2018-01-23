@@ -16,6 +16,10 @@ public class InventoryUI : MonoBehaviour
 
     private bool inventoryOpen = false;
 
+    [Header("Item Inspection UI Effect")]
+    [SerializeField] private CanvasGroup inspectionUI;
+    [SerializeField] private Image inspectionItemSprite;
+
 	protected void Start () 
 	{
         anim = GetComponent<Animator>();
@@ -59,24 +63,43 @@ public class InventoryUI : MonoBehaviour
     public void ToggleInventory()
     {
         inventoryOpen = !inventoryOpen;
-        Player.Instance.UndoMoveTo();
-
         UpdateInventoryUI();
     }
 
     public void OpenInventory()
     {
         inventoryOpen = true;
-        Player.Instance.UndoMoveTo();
-
         UpdateInventoryUI();
     }
 
     public void CloseInventory()
     {
         inventoryOpen = false;
-        Player.Instance.UndoMoveTo();
-
         UpdateInventoryUI();
+    }
+
+    public void InspectItem(int index)
+    {
+        if (index >= inventoryReference.UniqueItemCount())
+        {
+            return;
+        }
+
+        inspectionUI.gameObject.SetActive(true);
+        inspectionUI.alpha = 1;
+
+        Time.timeScale = 0;
+
+        inspectionItemSprite.sprite = inventoryReference.GetItem(index).sprite;
+    }
+
+    public void HideItemInspectionUI()
+    {
+        inspectionUI.alpha = 0;
+        inspectionUI.gameObject.SetActive(false);
+
+        Time.timeScale = 1;
+
+        inspectionItemSprite.sprite = null;
     }
 }

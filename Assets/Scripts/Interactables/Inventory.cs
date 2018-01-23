@@ -14,7 +14,7 @@ public class ItemData
     }
 }
 
-public class Inventory : MonoBehaviour 
+public class Inventory : MonoBehaviour
 {
     public const int inventoryMaxSize = 5;
 
@@ -33,7 +33,7 @@ public class Inventory : MonoBehaviour
             return false;
         }
 
-        for ( int i = 0; i < amount; i++)
+        for (int i = 0; i < amount; i++)
             itemContainer.Add(data);
 
 
@@ -100,7 +100,7 @@ public class Inventory : MonoBehaviour
     {
         itemContainer.Clear();
         SendUIUpdateEvent();
-        
+
     }
 
     public ItemData GetItem(int index)
@@ -121,5 +121,10 @@ public class Inventory : MonoBehaviour
             inventoryUI = FindObjectOfType<InventoryUI>();
 
         inventoryUI.BroadcastMessage("UpdateInventoryUI");
+    }
+
+    public int UniqueItemCount()
+    {
+        return itemContainer.Count;
     }
 }

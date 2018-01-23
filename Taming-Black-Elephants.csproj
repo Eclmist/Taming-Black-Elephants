@@ -303,6 +303,7 @@
     <Compile Include="Assets\Scripts\Level\Nagano Manager\LivingRoom_1.cs" />
     <Compile Include="Assets\Scripts\Misc\CyroTrollDoor.cs" />
     <Compile Include="Assets\Scripts\Misc\LightFlicker.cs" />
+    <Compile Include="Assets\Scripts\Misc\SetActiveToggle.cs" />
     <Compile Include="Assets\Scripts\Scene Loader\Fader.cs" />
     <Compile Include="Assets\Scripts\Scene Loader\Initiate.cs" />
     <Compile Include="Assets\Scripts\Scene Loader\LevelPortalCollection.cs" />

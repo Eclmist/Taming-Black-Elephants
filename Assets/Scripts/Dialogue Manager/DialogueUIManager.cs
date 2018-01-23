@@ -74,6 +74,8 @@ public class DialogueUIManager : MonoBehaviour
         bool isThinking = false, Sprite portrait = null, bool portraitOnLeft = true)
     {
         StopAllCoroutines();
+
+
         characterNameObj.text = characterName;
 
         portraitLeft.enabled = false;
@@ -119,6 +121,7 @@ public class DialogueUIManager : MonoBehaviour
         }
 
         buttonCanvasGroup.alpha = 1;
+        buttonCanvasGroup.blocksRaycasts = true;
     }
 
     public void ShowGenericOptions(params GenericAction[] callbacks)
@@ -162,12 +165,14 @@ public class DialogueUIManager : MonoBehaviour
     {
         selectedOptionIndex = index;
         buttonCanvasGroup.alpha = 0;
+        buttonCanvasGroup.blocksRaycasts = false;
         RemoveAllButtons();
     }
 
     public void ToggleDialogueUI(bool active)
     {
         canvasGroup.alpha = active ? 1 : 0;
+        canvasGroup.blocksRaycasts = active;
 
         if (freezeTime)
         {

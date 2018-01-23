@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class Player : Actor2D
 {
@@ -70,11 +71,12 @@ public class Player : Actor2D
         Vector2 clickPos = Vector2.zero;
         bool firstTouchFrame = true;
 
-        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began &&
+            !EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId))
         {
             clickPos = Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
         }
-        else if (Input.GetMouseButtonDown(0) && Time.timeScale != 0)
+        else if (Input.GetMouseButtonDown(0) && Time.timeScale != 0 && !EventSystem.current.IsPointerOverGameObject())
         {
             clickPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         }
