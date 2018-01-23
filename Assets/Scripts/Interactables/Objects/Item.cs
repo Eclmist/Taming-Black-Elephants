@@ -6,13 +6,11 @@ public class Item : MonoBehaviour, IInteractable, IItem
 {
     public virtual void Interact()
     {
-
-
         AddToInventory();
-
     }
 
     [SerializeField] protected Sprite sprite;
+    [SerializeField] protected Sprite inspectionSprite;
     [SerializeField] protected int amount = 1;
 
     [SerializeField] protected string name = "Generic Item";    // NAME IS UNIQUE ID.
@@ -26,6 +24,11 @@ public class Item : MonoBehaviour, IInteractable, IItem
     public Sprite Sprite
     {
         get { return sprite; }
+    }
+
+    public Sprite InspectionSprite
+    {
+        get { return (inspectionSprite == null) ? sprite : inspectionSprite; }
     }
 
     // cctor

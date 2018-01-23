@@ -90,7 +90,7 @@ public class InventoryUI : MonoBehaviour
 
         Time.timeScale = 0;
 
-        inspectionItemSprite.sprite = inventoryReference.GetItem(index).sprite;
+        inspectionItemSprite.sprite = inventoryReference.GetItem(index).inspectionSprite;
     }
 
     public void HideItemInspectionUI()

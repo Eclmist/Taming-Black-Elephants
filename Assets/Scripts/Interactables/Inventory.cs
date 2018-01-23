@@ -5,11 +5,13 @@ using UnityEngine;
 public class ItemData
 {
     public Sprite sprite;
+    public Sprite inspectionSprite;
     public string name;
 
-    public ItemData(Sprite s, string n)
+    public ItemData(Sprite s, Sprite iSprite, string n)
     {
         sprite = s;
+        inspectionSprite = iSprite;
         name = n;
     }
 }
@@ -26,7 +28,7 @@ public class Inventory : MonoBehaviour
     // Returns true if success, false if got problem
     public bool AddToInventory(Item item, int amount = 1, bool showEffect = true)
     {
-        ItemData data = new ItemData(item.Sprite, item.name);
+        ItemData data = new ItemData(item.Sprite, item.InspectionSprite, item.name);
 
         if (itemContainer.Count + amount >= inventoryMaxSize)
         {
