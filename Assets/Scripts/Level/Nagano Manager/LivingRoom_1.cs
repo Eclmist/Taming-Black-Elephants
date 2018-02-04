@@ -29,4 +29,9 @@ public class LivingRoom_1 : MonoBehaviour
     {
         Player.Instance.Inventory.RemoveItem("Carrot");
     }
+
+    public void GoToOffice()
+    {
+        LevelTransition.LoadScene("Office", 0);
+    }
 }

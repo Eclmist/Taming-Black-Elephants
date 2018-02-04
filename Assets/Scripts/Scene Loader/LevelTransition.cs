@@ -32,7 +32,7 @@ public class LevelTransition : MonoBehaviour, IInteractable {
         }
         else
         {
-            LoadScene();
+            LoadScene(targetScene, targetIndex);
         }
     }
 
@@ -56,6 +56,11 @@ public class LevelTransition : MonoBehaviour, IInteractable {
     }
 
     private void LoadScene()
+    {
+        LoadScene(targetScene, targetIndex);
+    }
+
+    public static void LoadScene(string targetScene, int targetIndex)
     {
 
         // Handle persistent BGM

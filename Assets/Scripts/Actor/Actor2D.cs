@@ -66,10 +66,10 @@ public class Actor2D : MonoBehaviour
         animator.SetFloat("Magnitude", rb.velocity.sqrMagnitude);
 
 
-        if (rb.velocity.sqrMagnitude < 0.01F)
-            animator.speed = 0;
-        else
-            animator.speed = 1;
+        //if (rb.velocity.sqrMagnitude < 0.01F)
+        //    animator.speed = 0;
+        //else
+        //    animator.speed = 1;
     }
 
     protected virtual void Move()
@@ -82,7 +82,7 @@ public class Actor2D : MonoBehaviour
         }
         else
         {
-            targetPosition = transform.position;
+            rb.velocity = Vector2.zero;
         }
     }
 
