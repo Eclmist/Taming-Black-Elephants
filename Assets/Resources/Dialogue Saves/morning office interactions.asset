@@ -174,6 +174,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114925103560081458}
   outputKnob: {fileID: 114947104433432806}
+  isThinking: 0
 --- !u!114 &114004647779466312
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -195,6 +196,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114210860304757596}
   outputKnob: {fileID: 114410971480723712}
+  isThinking: 0
 --- !u!114 &114004901863636394
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -286,8 +288,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114777056069959460}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114133310643640248}
   side: 4
@@ -306,8 +308,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114381803054027248}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114790663437580014}
   side: 4
@@ -354,6 +356,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114075534264205604}
   outputKnob: {fileID: 114249832837911172}
+  isThinking: 0
 --- !u!114 &114025531719956518
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -416,6 +419,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114801898362130920}
   outputKnob: {fileID: 114004901863636394}
+  isThinking: 0
 --- !u!114 &114030369444075392
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -429,8 +433,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114305419297663340}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114767380376614640}
   side: 4
@@ -458,6 +462,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114496078867596508}
   outputKnob: {fileID: 114473346685708348}
+  isThinking: 0
 --- !u!114 &114054339532811870
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -479,6 +484,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114848714375224506}
   outputKnob: {fileID: 114008790144756004}
+  isThinking: 0
 --- !u!114 &114058105986310136
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -512,8 +518,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114270099050873980}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114133257501848982}
   side: 4
@@ -540,6 +546,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114324617882983458}
   outputKnob: {fileID: 114008720361929406}
+  isThinking: 0
 --- !u!114 &114067726769245880
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -553,8 +560,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114976077400259304}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114676148083012240}
   side: 4
@@ -603,6 +610,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114274416230152010}
   outputKnob: {fileID: 114790663437580014}
+  isThinking: 0
 --- !u!114 &114075072109681786
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -624,6 +632,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114184407266000378}
   outputKnob: {fileID: 114211823812831300}
+  isThinking: 0
 --- !u!114 &114075534264205604
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -637,8 +646,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114024987718176658}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114106714727071930}
   side: 4
@@ -665,6 +674,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114888103202934838}
   outputKnob: {fileID: 114149126539029688}
+  isThinking: 0
 --- !u!114 &114081131482100150
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -718,8 +728,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114157533198884284}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114656918124512960}
   side: 4
@@ -778,8 +788,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114216320197706582}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114115216165963540}
   side: 4
@@ -846,6 +856,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114426964721959316}
   outputKnob: {fileID: 114960298409231136}
+  isThinking: 0
 --- !u!114 &114115216165963540
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -879,8 +890,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114302292338053220}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114263173284741630}
   side: 4
@@ -939,8 +950,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114135615560503686}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114321564460758642}
   side: 4
@@ -1007,6 +1018,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114779564459933076}
   outputKnob: {fileID: 114321564460758642}
+  isThinking: 0
 --- !u!114 &114130472959827374
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1109,6 +1121,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114120304691877142}
   outputKnob: {fileID: 114639787805512710}
+  isThinking: 0
 --- !u!114 &114135857054203288
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1190,6 +1203,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114280874624656198}
   outputKnob: {fileID: 114340083210463828}
+  isThinking: 0
 --- !u!114 &114157533198884284
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1211,6 +1225,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114098421772160192}
   outputKnob: {fileID: 114502471919336466}
+  isThinking: 0
 --- !u!114 &114160690135517796
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1224,8 +1239,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114615236129141398}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114226058824985696}
   side: 4
@@ -1244,8 +1259,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114690698623216374}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114420614430116534}
   side: 4
@@ -1272,6 +1287,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114760814077151094}
   outputKnob: {fileID: 114960232936446190}
+  isThinking: 0
 --- !u!114 &114182377876892746
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1304,8 +1320,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114075072109681786}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114639787805512710}
   side: 4
@@ -1367,8 +1383,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114819616262545344}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114607610879522136}
   side: 4
@@ -1416,6 +1432,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114817505512218444}
   outputKnob: {fileID: 114367933700294438}
+  isThinking: 0
 --- !u!114 &114200312351750724
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1465,8 +1482,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114339908973190388}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114624418122585582}
   side: 4
@@ -1524,8 +1541,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114004647779466312}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114754234304809442}
   side: 4
@@ -1565,8 +1582,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114300026069048476}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114476661283406014}
   side: 4
@@ -1613,6 +1630,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114102846753313514}
   outputKnob: {fileID: 114831238534762400}
+  isThinking: 0
 --- !u!114 &114217108335099238
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1655,6 +1673,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114765907372809162}
   outputKnob: {fileID: 114929543026684570}
+  isThinking: 0
 --- !u!114 &114223282547470180
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1688,8 +1707,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114379392566956774}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114473346685708348}
   side: 4
@@ -1804,8 +1823,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114538446262870666}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114456109455238976}
   side: 4
@@ -1824,8 +1843,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114721793335532222}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114102551576337268}
   side: 4
@@ -1852,6 +1871,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114310448538155638}
   outputKnob: {fileID: 114720664288581420}
+  isThinking: 0
 --- !u!114 &114263173284741630
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1893,6 +1913,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114064433298317734}
   outputKnob: {fileID: 114616886341467128}
+  isThinking: 0
 --- !u!114 &114270675334532206
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1955,6 +1976,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114861148828515160}
   outputKnob: {fileID: 114693097319896598}
+  isThinking: 0
 --- !u!114 &114274416230152010
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1968,8 +1990,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114074323179791388}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114565178754592066}
   side: 4
@@ -2008,8 +2030,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114154694474338076}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114101991164784588}
   side: 4
@@ -2049,8 +2071,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114910519014792402}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114510963655610246}
   side: 4
@@ -2077,6 +2099,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114211404081676816}
   outputKnob: {fileID: 114764068377583062}
+  isThinking: 0
 --- !u!114 &114302292338053220
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2098,6 +2121,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114116120336137218}
   outputKnob: {fileID: 114857591306610584}
+  isThinking: 0
 --- !u!114 &114303460978676294
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2141,6 +2165,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114030369444075392}
   outputKnob: {fileID: 114635785314946388}
+  isThinking: 0
 --- !u!114 &114310448538155638
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2154,8 +2179,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114259938638667642}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114021461965422526}
   side: 4
@@ -2195,8 +2220,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114749575261523598}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114417228587552772}
   side: 4
@@ -2235,8 +2260,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114065367290574572}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114147555243476920}
   side: 4
@@ -2325,6 +2350,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114204803509060776}
   outputKnob: {fileID: 114107896314209016}
+  isThinking: 0
 --- !u!114 &114340083210463828
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2357,8 +2383,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114508990282388408}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114741923518403620}
   side: 4
@@ -2397,8 +2423,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114574769900951506}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 2
+  styleID: Default
   _connections:
   - {fileID: 114211823812831300}
   side: 4
@@ -2525,6 +2551,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114711979696855984}
   outputKnob: {fileID: 114624418122585582}
+  isThinking: 0
 --- !u!114 &114379392566956774
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2546,6 +2573,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114224869533234698}
   outputKnob: {fileID: 114968610191195448}
+  isThinking: 0
 --- !u!114 &114381552416064060
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2587,6 +2615,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114018918991975896}
   outputKnob: {fileID: 114445259534334266}
+  isThinking: 0
 --- !u!114 &114382510713599136
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2608,6 +2637,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114963730813269716}
   outputKnob: {fileID: 114963829359443684}
+  isThinking: 0
 --- !u!114 &114389964596876720
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2621,8 +2651,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114762829328504106}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114767120721788568}
   side: 4
@@ -2739,8 +2769,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114559432989583024}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114960298409231136}
   side: 4
@@ -2788,6 +2818,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114572907019439578}
   outputKnob: {fileID: 114133628559177334}
+  isThinking: 0
 --- !u!114 &114417228587552772
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2860,8 +2891,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114111415371053008}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114013982309309944}
   side: 4
@@ -3025,6 +3056,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114547300913398162}
   outputKnob: {fileID: 114593623882695622}
+  isThinking: 0
 --- !u!114 &114484370233589138
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3094,8 +3126,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114824630334041066}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114083024176953126}
   side: 4
@@ -3114,8 +3146,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114598019728905080}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114947104433432806}
   side: 4
@@ -3134,8 +3166,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114047892077676986}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114116494549635608}
   side: 4
@@ -3195,8 +3227,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114643927094054096}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114025531719956518}
   side: 4
@@ -3223,6 +3255,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114348621510939928}
   outputKnob: {fileID: 114226058824985696}
+  isThinking: 0
 --- !u!114 &114510963655610246
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3256,8 +3289,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114761374384697590}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114811442913018850}
   side: 4
@@ -3339,6 +3372,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114255878732978218}
   outputKnob: {fileID: 114607610879522136}
+  isThinking: 0
 --- !u!114 &114543036788501554
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3373,8 +3407,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114483668183310460}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114279132838130706}
   side: 4
@@ -3393,8 +3427,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114738205108724390}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114445259534334266}
   side: 4
@@ -3482,6 +3516,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114414289808566784}
   outputKnob: {fileID: 114563214851273584}
+  isThinking: 0
 --- !u!114 &114559537092699974
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3551,8 +3586,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114940996293632168}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 2
+  styleID: Default
   _connections:
   - {fileID: 114563214851273584}
   side: 4
@@ -3599,6 +3634,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114904274850757222}
   outputKnob: {fileID: 114484370233589138}
+  isThinking: 0
 --- !u!114 &114571526843843156
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3628,8 +3664,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114416769101147622}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114368533773666552}
   side: 4
@@ -3681,6 +3717,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114940863204978770}
   outputKnob: {fileID: 114466937566382606}
+  isThinking: 0
 --- !u!114 &114583239270819636
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3755,8 +3792,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114884234652831438}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114335596657650742}
   side: 4
@@ -3775,8 +3812,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114740645007138922}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114128652161774664}
   side: 4
@@ -3863,6 +3900,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114495393414803530}
   outputKnob: {fileID: 114368533773666552}
+  isThinking: 0
 --- !u!114 &114602038425481296
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3876,8 +3914,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114950854772246744}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114339393758334060}
   side: 4
@@ -4025,6 +4063,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114160690135517796}
   outputKnob: {fileID: 114456109455238976}
+  isThinking: 0
 --- !u!114 &114616886341467128
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4162,6 +4201,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114874192045930042}
   outputKnob: {fileID: 114605263184160656}
+  isThinking: 0
 --- !u!114 &114635785314946388
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4244,6 +4284,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114507069205866096}
   outputKnob: {fileID: 114939605157154882}
+  isThinking: 0
 --- !u!114 &114656918124512960
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4307,6 +4348,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114676548406390350}
   outputKnob: {fileID: 114205963252946268}
+  isThinking: 0
 --- !u!114 &114669659554256176
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4336,8 +4378,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114712564924315646}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114528022621399628}
   side: 4
@@ -4356,8 +4398,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114754592233595694}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114939605157154882}
   side: 4
@@ -4396,8 +4438,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114667824536604876}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114830549085060900}
   side: 4
@@ -4424,6 +4466,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114163475855386350}
   outputKnob: {fileID: 114335596657650742}
+  isThinking: 0
 --- !u!114 &114691940546269100
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4445,6 +4488,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114931724374068550}
   outputKnob: {fileID: 114830549085060900}
+  isThinking: 0
 --- !u!114 &114693097319896598
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4492,8 +4536,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114378460175108228}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114058105986310136}
   side: 4
@@ -4520,6 +4564,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114670689577269026}
   outputKnob: {fileID: 114395873316340318}
+  isThinking: 0
 --- !u!114 &114713989718081338
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4562,6 +4607,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114838948484431788}
   outputKnob: {fileID: 114997027469992136}
+  isThinking: 0
 --- !u!114 &114720664288581420
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4603,6 +4649,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114259727868153728}
   outputKnob: {fileID: 114812941216882144}
+  isThinking: 0
 --- !u!114 &114729338947659324
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4663,6 +4710,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114547784690651136}
   outputKnob: {fileID: 114013982309309944}
+  isThinking: 0
 --- !u!114 &114740645007138922
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4684,6 +4732,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114588002821993958}
   outputKnob: {fileID: 114676148083012240}
+  isThinking: 0
 --- !u!114 &114741923518403620
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4745,6 +4794,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114967030759748442}
   outputKnob: {fileID: 114083024176953126}
+  isThinking: 0
 --- !u!114 &114749575261523598
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4766,6 +4816,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114317614168519868}
   outputKnob: {fileID: 114115216165963540}
+  isThinking: 0
 --- !u!114 &114754234304809442
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4807,6 +4858,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114672505294563702}
   outputKnob: {fileID: 114476661283406014}
+  isThinking: 0
 --- !u!114 &114758914187634788
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4840,8 +4892,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114170205373587402}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114783122306427784}
   side: 4
@@ -4868,6 +4920,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114521572769326896}
   outputKnob: {fileID: 114182377876892746}
+  isThinking: 0
 --- !u!114 &114762829328504106
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4889,6 +4942,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114389964596876720}
   outputKnob: {fileID: 114135857054203288}
+  isThinking: 0
 --- !u!114 &114764068377583062
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4922,8 +4976,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114221500059577338}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114875780422239756}
   side: 4
@@ -4998,8 +5052,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114869879552000854}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114730320383673238}
   side: 4
@@ -5026,6 +5080,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114016020599858284}
   outputKnob: {fileID: 114510963655610246}
+  isThinking: 0
 --- !u!114 &114779564459933076
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5039,8 +5094,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114129871857501464}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114745602580615534}
   side: 4
@@ -5175,8 +5230,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114029485292509686}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114381552416064060}
   side: 4
@@ -5215,8 +5270,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114932726582572082}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 2
+  styleID: Default
   _connections:
   - {fileID: 114008720361929406}
   side: 4
@@ -5294,8 +5349,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114199117996465378}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114249832837911172}
   side: 4
@@ -5322,6 +5377,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114192295794339984}
   outputKnob: {fileID: 114102551576337268}
+  isThinking: 0
 --- !u!114 &114822556522105424
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5361,6 +5417,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114840109397825830}
   outputKnob: {fileID: 114402322919684120}
+  isThinking: 0
 --- !u!114 &114824630334041066
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5382,6 +5439,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114493379300921706}
   outputKnob: {fileID: 114147555243476920}
+  isThinking: 0
 --- !u!114 &114830549085060900
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5456,8 +5514,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114714938840404242}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114815880756184802}
   side: 4
@@ -5476,8 +5534,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114824256089236770}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114963829359443684}
   side: 4
@@ -5538,8 +5596,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114054339532811870}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114025721844588730}
   side: 4
@@ -5598,8 +5656,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114271071347262278}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114595197865009872}
   side: 4
@@ -5647,6 +5705,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114776880198274470}
   outputKnob: {fileID: 114417228587552772}
+  isThinking: 0
 --- !u!114 &114873567730215068
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5668,6 +5727,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114982801919170300}
   outputKnob: {fileID: 114583239270819636}
+  isThinking: 0
 --- !u!114 &114874192045930042
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5681,8 +5741,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114633638800653996}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114251133354475890}
   side: 4
@@ -5729,6 +5789,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114587645821539028}
   outputKnob: {fileID: 114116494549635608}
+  isThinking: 0
 --- !u!114 &114888103202934838
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5742,8 +5803,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114076695126382474}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114635785314946388}
   side: 4
@@ -5762,8 +5823,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114905475736157132}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114929543026684570}
   side: 4
@@ -5800,8 +5861,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114570252742694698}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114923830118140186}
   side: 4
@@ -5828,6 +5889,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114888427694357454}
   outputKnob: {fileID: 114767380376614640}
+  isThinking: 0
 --- !u!114 &114910519014792402
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5849,6 +5911,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114288879030026842}
   outputKnob: {fileID: 114730320383673238}
+  isThinking: 0
 --- !u!114 &114923830118140186
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5882,8 +5945,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114003488570114488}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114364364049074416}
   side: 4
@@ -5922,8 +5985,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114691940546269100}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114135857054203288}
   side: 4
@@ -5942,8 +6005,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114964574591027174}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114968610191195448}
   side: 4
@@ -6029,8 +6092,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114582032507576724}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114223282547470180}
   side: 4
@@ -6124,6 +6187,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114602038425481296}
   outputKnob: {fileID: 114767120721788568}
+  isThinking: 0
 --- !u!114 &114959949690431648
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6196,8 +6260,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114382510713599136}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114785761469841966}
   side: 4
@@ -6244,6 +6308,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114932380785770182}
   outputKnob: {fileID: 114128866731081646}
+  isThinking: 0
 --- !u!114 &114967030759748442
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6257,8 +6322,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114748636346411882}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114812941216882144}
   side: 4
@@ -6305,6 +6370,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114067726769245880}
   outputKnob: {fileID: 114420614430116534}
+  isThinking: 0
 --- !u!114 &114981197613965986
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6339,8 +6405,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114873567730215068}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114842163025971250}
   side: 4

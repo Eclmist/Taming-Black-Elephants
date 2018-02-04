@@ -261,6 +261,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114431752369057730}
   outputKnob: {fileID: 114695682474185586}
+  isThinking: 0
 --- !u!114 &114012151901898484
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -487,6 +488,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114704828376972210}
   outputKnob: {fileID: 114211231839571774}
+  isThinking: 0
 --- !u!114 &114040320440997176
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -639,6 +641,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114604804575826114}
   outputKnob: {fileID: 114849431988556034}
+  isThinking: 0
 --- !u!114 &114049330470755896
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -742,6 +745,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114185512701095704}
   outputKnob: {fileID: 114180047433717494}
+  isThinking: 0
 --- !u!114 &114055715171762126
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -822,6 +826,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114043812651968766}
   outputKnob: {fileID: 114186020661456886}
+  isThinking: 0
 --- !u!114 &114062282415372752
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -843,6 +848,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114681029833845122}
   outputKnob: {fileID: 114758947270227016}
+  isThinking: 0
 --- !u!114 &114071790774303678
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -904,6 +910,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114432022326224020}
   outputKnob: {fileID: 114642230978049470}
+  isThinking: 0
 --- !u!114 &114074305200639696
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -965,6 +972,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114634287345156892}
   outputKnob: {fileID: 114654075702631366}
+  isThinking: 0
 --- !u!114 &114080277830798628
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1166,6 +1174,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114359064488240172}
   outputKnob: {fileID: 114803469389553180}
+  isThinking: 0
 --- !u!114 &114102092132437226
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1227,6 +1236,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114919954762867770}
   outputKnob: {fileID: 114508642432218104}
+  isThinking: 0
 --- !u!114 &114110022040305842
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1307,6 +1317,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114030183996766186}
   outputKnob: {fileID: 114440787666436834}
+  isThinking: 0
 --- !u!114 &114120270035488666
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1529,6 +1540,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114212591816536676}
   outputKnob: {fileID: 114407812003718538}
+  isThinking: 0
 --- !u!114 &114146199736740940
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1670,6 +1682,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114790857962325430}
   outputKnob: {fileID: 114521059981050298}
+  isThinking: 0
 --- !u!114 &114170884795000314
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1711,6 +1724,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114231740425052116}
   outputKnob: {fileID: 114136403646703540}
+  isThinking: 0
 --- !u!114 &114174917961842326
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1732,6 +1746,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114777287647933836}
   outputKnob: {fileID: 114815022855645592}
+  isThinking: 0
 --- !u!114 &114175479290445508
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1793,6 +1808,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114246710145994738}
   outputKnob: {fileID: 114724481976908994}
+  isThinking: 0
 --- !u!114 &114180047433717494
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1914,6 +1930,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114122431687348352}
   outputKnob: {fileID: 114433741319033142}
+  isThinking: 0
 --- !u!114 &114199968260271936
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1955,6 +1972,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114724817696760890}
   outputKnob: {fileID: 114500661948736458}
+  isThinking: 0
 --- !u!114 &114202753229722264
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1976,6 +1994,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114727189374341738}
   outputKnob: {fileID: 114110844819929714}
+  isThinking: 0
 --- !u!114 &114211231839571774
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2056,6 +2075,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114819420394020350}
   outputKnob: {fileID: 114219942262205546}
+  isThinking: 0
 --- !u!114 &114217390504216676
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2117,6 +2137,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114086927162529874}
   outputKnob: {fileID: 114199968260271936}
+  isThinking: 0
 --- !u!114 &114221576406170890
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2138,6 +2159,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114077024818827370}
   outputKnob: {fileID: 114387553382300416}
+  isThinking: 0
 --- !u!114 &114223522786071668
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2240,6 +2262,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114120270035488666}
   outputKnob: {fileID: 114407606822771800}
+  isThinking: 0
 --- !u!114 &114231740425052116
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2302,6 +2325,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114102092132437226}
   outputKnob: {fileID: 114423159474728016}
+  isThinking: 0
 --- !u!114 &114238606700707658
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2378,6 +2402,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114226360079704774}
   outputKnob: {fileID: 114721574572302034}
+  isThinking: 0
 --- !u!114 &114246710145994738
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2461,6 +2486,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114853545470209256}
   outputKnob: {fileID: 114456876066433356}
+  isThinking: 0
 --- !u!114 &114254748032578566
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2522,6 +2548,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114236679191819300}
   outputKnob: {fileID: 114142424874824770}
+  isThinking: 0
 --- !u!114 &114265230278405170
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2616,6 +2643,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114175479290445508}
   outputKnob: {fileID: 114088012288638454}
+  isThinking: 0
 --- !u!114 &114284983853669626
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2738,6 +2766,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114644520464491988}
   outputKnob: {fileID: 114498074516371264}
+  isThinking: 0
 --- !u!114 &114295968744215196
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2819,6 +2848,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114834039404523776}
   outputKnob: {fileID: 114979664171851310}
+  isThinking: 0
 --- !u!114 &114311498149371272
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2860,6 +2890,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114959436478038964}
   outputKnob: {fileID: 114868652464063292}
+  isThinking: 0
 --- !u!114 &114321508367064578
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2881,6 +2912,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114454911771684376}
   outputKnob: {fileID: 114751684407990210}
+  isThinking: 0
 --- !u!114 &114321615831993616
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3200,6 +3232,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114001677438979760}
   outputKnob: {fileID: 114568288013087998}
+  isThinking: 0
 --- !u!114 &114351713538542112
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3237,6 +3270,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114329211247466692}
   outputKnob: {fileID: 114677977119494536}
+  isThinking: 0
 --- !u!114 &114355010739018592
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3318,6 +3352,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114539545325929416}
   outputKnob: {fileID: 114569418686955774}
+  isThinking: 0
 --- !u!114 &114359064488240172
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3479,6 +3514,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114132478995718694}
   outputKnob: {fileID: 114444826022866942}
+  isThinking: 0
 --- !u!114 &114380185110704284
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3601,6 +3637,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114227387480716066}
   outputKnob: {fileID: 114176127351767588}
+  isThinking: 0
 --- !u!114 &114388000559755338
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3662,6 +3699,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114329357981278624}
   outputKnob: {fileID: 114436287131145088}
+  isThinking: 0
 --- !u!114 &114399862719200086
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3945,6 +3983,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114030407483295446}
   outputKnob: {fileID: 114399862719200086}
+  isThinking: 0
 --- !u!114 &114433741319033142
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4026,6 +4065,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114074305200639696}
   outputKnob: {fileID: 114339900370029582}
+  isThinking: 0
 --- !u!114 &114440787666436834
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4129,6 +4169,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114284983853669626}
   outputKnob: {fileID: 114901840680818360}
+  isThinking: 0
 --- !u!114 &114451986468254902
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4190,6 +4231,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114586077552706704}
   outputKnob: {fileID: 114544838520241008}
+  isThinking: 0
 --- !u!114 &114456876066433356
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4297,6 +4339,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114400078867230966}
   outputKnob: {fileID: 114943997647702164}
+  isThinking: 0
 --- !u!114 &114468329638444846
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4375,6 +4418,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114265230278405170}
   outputKnob: {fileID: 114102274487858388}
+  isThinking: 0
 --- !u!114 &114477227403931338
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4431,6 +4475,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114254748032578566}
   outputKnob: {fileID: 114170884795000314}
+  isThinking: 0
 --- !u!114 &114484209141060000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4453,6 +4498,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114985512877948830}
   outputKnob: {fileID: 114381937087697458}
+  isThinking: 0
 --- !u!114 &114484503582265770
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4537,6 +4583,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114371639343633508}
   outputKnob: {fileID: 114057110074393264}
+  isThinking: 0
 --- !u!114 &114490248123897412
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4678,6 +4725,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114855450709958080}
   outputKnob: {fileID: 114822370796588876}
+  isThinking: 0
 --- !u!114 &114512017417215500
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4759,6 +4807,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114071790774303678}
   outputKnob: {fileID: 114013107819360244}
+  isThinking: 0
 --- !u!114 &114526991606151678
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4823,6 +4872,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114416387502940594}
   outputKnob: {fileID: 114257977387835984}
+  isThinking: 0
 --- !u!114 &114535154049270460
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4866,6 +4916,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114376759206801308}
   outputKnob: {fileID: 114512017417215500}
+  isThinking: 0
 --- !u!114 &114538940914665990
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4887,6 +4938,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114893447640468220}
   outputKnob: {fileID: 114214402313499990}
+  isThinking: 0
 --- !u!114 &114539017953740378
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5009,6 +5061,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114240210787354964}
   outputKnob: {fileID: 114717576826604908}
+  isThinking: 0
 --- !u!114 &114552696219481118
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5091,6 +5144,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114526991606151678}
   outputKnob: {fileID: 114776060182862126}
+  isThinking: 0
 --- !u!114 &114568212779322796
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5201,6 +5255,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114335888571007438}
   outputKnob: {fileID: 114499960963958910}
+  isThinking: 0
 --- !u!114 &114582279321390988
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5365,6 +5420,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114451986468254902}
   outputKnob: {fileID: 114337220290412540}
+  isThinking: 0
 --- !u!114 &114600304213826384
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5386,6 +5442,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114188113450530626}
   outputKnob: {fileID: 114355010739018592}
+  isThinking: 0
 --- !u!114 &114601722941541382
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5407,6 +5464,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114943075621626594}
   outputKnob: {fileID: 114285050214415460}
+  isThinking: 0
 --- !u!114 &114604804575826114
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5488,6 +5546,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114477530558048270}
   outputKnob: {fileID: 114760547387751386}
+  isThinking: 0
 --- !u!114 &114618071582678792
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5509,6 +5568,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114650234961583886}
   outputKnob: {fileID: 114417639642206322}
+  isThinking: 0
 --- !u!114 &114621265456628788
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5570,6 +5630,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114055715171762126}
   outputKnob: {fileID: 114645411631890548}
+  isThinking: 0
 --- !u!114 &114626242640834500
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5671,6 +5732,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114742687352815512}
   outputKnob: {fileID: 114331507978678202}
+  isThinking: 0
 --- !u!114 &114642230978049470
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5918,6 +5980,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114622489750113174}
   outputKnob: {fileID: 114230352645280794}
+  isThinking: 0
 --- !u!114 &114661761844927372
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6131,6 +6194,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114704880544812812}
   outputKnob: {fileID: 114420798840926754}
+  isThinking: 0
 --- !u!114 &114694573757512350
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6236,6 +6300,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114125136438913974}
   outputKnob: {fileID: 114024429978728234}
+  isThinking: 0
 --- !u!114 &114704746844331794
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6319,6 +6384,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114051759827349458}
   outputKnob: {fileID: 114509484412259710}
+  isThinking: 0
 --- !u!114 &114707653194467388
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6378,6 +6444,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114344411238044212}
   outputKnob: {fileID: 114671812629358624}
+  isThinking: 0
 --- !u!114 &114714302037276622
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6399,6 +6466,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114626242640834500}
   outputKnob: {fileID: 114856117326746966}
+  isThinking: 0
 --- !u!114 &114717576826604908
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6460,6 +6528,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114418311895043982}
   outputKnob: {fileID: 114100186971531856}
+  isThinking: 0
 --- !u!114 &114724481976908994
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6541,6 +6610,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114610818472621274}
   outputKnob: {fileID: 114606102959294686}
+  isThinking: 0
 --- !u!114 &114730038402010196
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6586,6 +6656,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114775648704834418}
   outputKnob: {fileID: 114002384277456714}
+  isThinking: 0
 --- !u!114 &114735628413905790
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6607,6 +6678,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114711149121149990}
   outputKnob: {fileID: 114436000650082164}
+  isThinking: 0
 --- !u!114 &114742687352815512
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6748,6 +6820,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114160734315996612}
   outputKnob: {fileID: 114488848536704472}
+  isThinking: 0
 --- !u!114 &114758947270227016
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7011,6 +7084,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114584780911394672}
   outputKnob: {fileID: 114844059681108782}
+  isThinking: 0
 --- !u!114 &114786287986250768
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7115,6 +7189,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114660417991142726}
   outputKnob: {fileID: 114040320440997176}
+  isThinking: 0
 --- !u!114 &114802110959892574
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7218,6 +7293,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114121140682774348}
   outputKnob: {fileID: 114766132810919840}
+  isThinking: 0
 --- !u!114 &114813545804213650
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7280,6 +7356,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114861979854097386}
   outputKnob: {fileID: 114960027956397688}
+  isThinking: 0
 --- !u!114 &114819096048544856
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7301,6 +7378,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114386918515716172}
   outputKnob: {fileID: 114026339321801584}
+  isThinking: 0
 --- !u!114 &114819420394020350
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7444,6 +7522,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114110931077688588}
   outputKnob: {fileID: 114020061263559260}
+  isThinking: 0
 --- !u!114 &114844059681108782
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7546,6 +7625,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114056774383057610}
   outputKnob: {fileID: 114919396656138418}
+  isThinking: 0
 --- !u!114 &114849431988556034
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7727,6 +7807,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114813545804213650}
   outputKnob: {fileID: 114669280763167486}
+  isThinking: 0
 --- !u!114 &114868652464063292
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7813,6 +7894,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114591035689716086}
   outputKnob: {fileID: 114443280117098752}
+  isThinking: 0
 --- !u!114 &114885430173519558
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7936,6 +8018,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114621265456628788}
   outputKnob: {fileID: 114303037671865162}
+  isThinking: 0
 --- !u!114 &114900047757726416
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8016,6 +8099,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114392976552078882}
   outputKnob: {fileID: 114823052759925384}
+  isThinking: 0
 --- !u!114 &114919336302091476
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8095,6 +8179,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114661761844927372}
   outputKnob: {fileID: 114947925301030904}
+  isThinking: 0
 --- !u!114 &114927679744699352
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8116,6 +8201,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114322299566052026}
   outputKnob: {fileID: 114089864916733958}
+  isThinking: 0
 --- !u!114 &114928812578993606
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8137,6 +8223,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114357827366199730}
   outputKnob: {fileID: 114311498149371272}
+  isThinking: 0
 --- !u!114 &114929913927598516
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8202,6 +8289,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114100432136833976}
   outputKnob: {fileID: 114802110959892574}
+  isThinking: 0
 --- !u!114 &114941049580371004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8223,6 +8311,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114099423476704954}
   outputKnob: {fileID: 114146199736740940}
+  isThinking: 0
 --- !u!114 &114943075621626594
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8363,6 +8452,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114993114063238232}
   outputKnob: {fileID: 114539795985302218}
+  isThinking: 0
 --- !u!114 &114952835467444028
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8384,6 +8474,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114943568936261838}
   outputKnob: {fileID: 114110022040305842}
+  isThinking: 0
 --- !u!114 &114953669220138156
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8405,6 +8496,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114862556562805712}
   outputKnob: {fileID: 114388000559755338}
+  isThinking: 0
 --- !u!114 &114953892684966086
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8545,6 +8637,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114962381365686280}
   outputKnob: {fileID: 114919336302091476}
+  isThinking: 0
 --- !u!114 &114968414578642876
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8607,6 +8700,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114592255659619972}
   outputKnob: {fileID: 114053804709671776}
+  isThinking: 0
 --- !u!114 &114973179946821544
 MonoBehaviour:
   m_ObjectHideFlags: 1

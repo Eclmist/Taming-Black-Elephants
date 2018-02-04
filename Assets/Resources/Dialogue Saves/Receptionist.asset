@@ -64,6 +64,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114279781740409506}
   outputKnob: {fileID: 114603749487173782}
+  isThinking: 0
 --- !u!114 &114168949130960574
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -96,8 +97,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114465023221866810}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114436194927578682}
   side: 4
@@ -116,8 +117,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114089228624942698}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114910007739120882}
   side: 4
@@ -144,6 +145,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114545281154447270}
   outputKnob: {fileID: 114562057835275922}
+  isThinking: 0
 --- !u!114 &114436194927578682
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -185,6 +187,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114246133655908056}
   outputKnob: {fileID: 114906859581202822}
+  isThinking: 0
 --- !u!114 &114499420067799324
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -214,8 +217,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114384695665735394}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114603749487173782}
   side: 4
@@ -361,6 +364,7 @@ MonoBehaviour:
   dialogAudio: {fileID: 0}
   inputKnob: {fileID: 114899782614292128}
   outputKnob: {fileID: 114910007739120882}
+  isThinking: 0
 --- !u!114 &114899782614292128
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -374,8 +378,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 114812530887391798}
   direction: 1
-  maxConnectionCount: 0
-  styleID: DialogueConnector
+  maxConnectionCount: 1
+  styleID: Default
   _connections:
   - {fileID: 114906859581202822}
   side: 4
