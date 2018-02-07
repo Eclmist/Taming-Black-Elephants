@@ -16,10 +16,12 @@ public class Office_1 : MonoBehaviour
 
     public void Start()
     {
-        Player.Instance.allowControls = false;
-        Player.Instance.transform.parent.localScale = new Vector3(1.25F, 1.25F, 1.25F);
-        StartCoroutine(WaitAndStartDialogue());
-
+        if ((Player.Instance.transform.position - new Vector3(-4, -4.66F, 0)).magnitude < 2)
+        {
+            Player.Instance.allowControls = false;
+            Player.Instance.transform.parent.localScale = new Vector3(1.25F, 1.25F, 1.25F);
+            StartCoroutine(WaitAndStartDialogue());
+        }
     }
 
     public void Update()
@@ -60,7 +62,8 @@ public class Office_1 : MonoBehaviour
         Player.Instance.allowControls = false;
         cleaner.gameObject.SetActive(true);
         cleaner.GetComponent<Animator>().enabled = true;
-
+        cleaner.transform.position = new Vector3(11.5F, -7F, 0);
+        
         Vector2 waypoint1 = new Vector2(11.5F, -1.78F);
         cleaner.MoveTo(waypoint1);
 

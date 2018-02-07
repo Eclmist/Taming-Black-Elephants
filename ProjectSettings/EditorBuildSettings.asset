@@ -26,3 +26,24 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CyroChamber.unity
     guid: b828eb390ed355949b4c2658e9280d53
+  - enabled: 1
+    path: Assets/Scenes/BunnyOffice.unity
+    guid: e6f9c1b02b87df14398e4c8c1cd2da42
+  - enabled: 1
+    path: Assets/Scenes/BunnyOffice_Before_Lunch.unity
+    guid: ac8a088e84e214b4688d3b1dac647884
+  - enabled: 1
+    path: Assets/Scenes/Lunch.unity
+    guid: 5b02d80af6ae90e4dae349bd8b3791b1
+  - enabled: 1
+    path: Assets/Scenes/BunnyOffice_After_Lunch.unity
+    guid: 3317e25d536100c42bc64cfae9b38f30
+  - enabled: 1
+    path: Assets/Scenes/BunnyOffice_After_Work.unity
+    guid: 9eb7a545f356d7c49882ed71242567fb
+  - enabled: 1
+    path: Assets/Scenes/Office_Evening.unity
+    guid: 76c1e1e67510f964397024f8dd53ee31
+  - enabled: 1
+    path: Assets/Scenes/BossOffice.unity
+    guid: e6b1162f4491f2d44929fd14de4e5003

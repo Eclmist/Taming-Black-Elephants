@@ -137,6 +137,7 @@ public class DialogueUIManager : MonoBehaviour
         canvasGroup.alpha = 0;  // We still want to freetime and generally use the toggleDialogueUI function, but
                                 // then we want to hide the Message box and etc
         buttonCanvasGroup.alpha = 1;
+        buttonCanvasGroup.blocksRaycasts = true;
 
         for (int i = 0; i < callbacks.Length; i++)
         {

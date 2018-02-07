@@ -142,10 +142,10 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: d6647a91351b2d7438c8d949a39661f6, type: 3}
   - mood: 5
     clip: {fileID: 8300000, guid: 0222816d466ac2d44829e903d62f078e, type: 3}
-  - mood: 0
-    clip: {fileID: 0}
-  - mood: 0
-    clip: {fileID: 0}
+  - mood: 7
+    clip: {fileID: 8300000, guid: f77277efbc0d81f43b11744985fdcc01, type: 3}
+  - mood: 2
+    clip: {fileID: 8300000, guid: 834d58d2974b14341abeb171167999c0, type: 3}
   - mood: 0
     clip: {fileID: 0}
   - mood: 0
