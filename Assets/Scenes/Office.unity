@@ -17653,7 +17653,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cleaner: {fileID: 1193381380}
   clothes: {fileID: 114303624836228046, guid: f486094a84d89e742bea51c74925d787, type: 2}
-  deodorant: {fileID: 0}
+  deodorant: {fileID: 114303624836228046, guid: 17811dd089af8ef4d937b7cd8d7d8a8e,
+    type: 2}
 --- !u!1001 &1793503529
 Prefab:
   m_ObjectHideFlags: 0
