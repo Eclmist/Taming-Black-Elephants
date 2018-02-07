@@ -12,6 +12,8 @@ public class Player : Actor2D
     public bool useJoystick = false;
     public bool allowInteractions = true;
 
+    public bool allowControls = true;
+
     public float playerReach = 1.5F;
 
     [SerializeField] private Transform colliderTransform;
@@ -67,6 +69,8 @@ public class Player : Actor2D
         else
             joystick.gameObject.SetActive(useJoystick);
 
+        if (!allowControls)
+            return;
 
         Vector2 clickPos = Vector2.zero;
         bool firstTouchFrame = true;
