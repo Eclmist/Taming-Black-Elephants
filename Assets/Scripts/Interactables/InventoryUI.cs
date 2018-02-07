@@ -8,6 +8,7 @@ public class InventoryUI : MonoBehaviour
 
     public Animator itemObtainedAnim;
     public Text itemName_Obtained;
+    public Image itemName_Obtained_Sprite;
 
     [SerializeField] private Image[] slots;
     

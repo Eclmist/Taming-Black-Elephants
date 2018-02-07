@@ -81,7 +81,7 @@ public class SmoothFollow : MonoBehaviour
             updateCameraPosition();
         }
 	}
-
+    
 
     void updateCameraPosition()
     {

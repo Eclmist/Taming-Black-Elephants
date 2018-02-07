@@ -1032,6 +1032,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemObtainedAnim: {fileID: 95979348287379058}
   itemName_Obtained: {fileID: 114657237798484426}
+  itemName_Obtained_Sprite: {fileID: 114853258515035488}
   slots:
   - {fileID: 114049056918035484}
   - {fileID: 114205749144817080}

@@ -7,6 +7,12 @@ public class Office_1 : MonoBehaviour
     [Header("Resources")]
     [SerializeField]
     private Actor2D cleaner;
+    [SerializeField]
+    private Item clothes;
+    [SerializeField]
+    private Item deodorant;
+
+    private int numberOfCompletedInteractions = 0;
 
     public void Start()
     {
@@ -14,6 +20,15 @@ public class Office_1 : MonoBehaviour
         Player.Instance.transform.parent.localScale = new Vector3(1.25F, 1.25F, 1.25F);
         StartCoroutine(WaitAndStartDialogue());
 
+    }
+
+    public void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            if (Time.timeScale == 1)
+                Time.timeScale = 2;
+        }
     }
 
     IEnumerator WaitAndStartDialogue()
@@ -44,6 +59,7 @@ public class Office_1 : MonoBehaviour
     {
         Player.Instance.allowControls = false;
         cleaner.gameObject.SetActive(true);
+        cleaner.GetComponent<Animator>().enabled = true;
 
         Vector2 waypoint1 = new Vector2(11.5F, -1.78F);
         cleaner.MoveTo(waypoint1);
@@ -73,6 +89,30 @@ public class Office_1 : MonoBehaviour
 
         Player.Instance.allowControls = true;
         cleaner.gameObject.SetActive(false);
+    }
+
+    public void IncrementInteraction()
+    {
+        numberOfCompletedInteractions++;
+    }
+
+    public void GivePlayerClothes()
+    {
+        Player.Instance.Inventory.AddToInventory(clothes);
+    }
+
+    public void TransferClothesToLizzy()
+    {
+        Player.Instance.Inventory.RemoveItem("Clothes");
+    }
+    public void GivePlayerDeodorant()
+    {
+        Player.Instance.Inventory.AddToInventory(deodorant);
+    }
+
+    public void TransferDeodorantToJasmine()
+    {
+        Player.Instance.Inventory.RemoveItem("Deodorant");
     }
 
 }
