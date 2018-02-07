@@ -113,7 +113,10 @@ public class Player : Actor2D
 
                 if (interactable != null)
                 {
-                    if ((transform.position - touched.gameObject.transform.position).sqrMagnitude < playerReach)
+                    if ((transform.position - 
+                        (touched.gameObject.transform.position +
+                        Vector3.Scale(((Vector3)touched.offset), touched.transform.localScale)))
+                        .sqrMagnitude < playerReach)
                     {
                         CheckInteraction(interactable);
 
