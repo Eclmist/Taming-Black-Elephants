@@ -20,8 +20,11 @@ public class DialogueUIManager : MonoBehaviour
     [SerializeField] private Image messageBox;
     [SerializeField] private Image characterNameBox;
 
-    [SerializeField] private Sprite normalChatSprite;
-    [SerializeField] private Sprite thoughtBubbleSprite;
+    [SerializeField] private GameObject thoughtBubble;
+    [SerializeField] private Text thoughtBubbleText;
+
+    [SerializeField] private Sprite messageBoxBlue;
+    [SerializeField] private Sprite messageBoxYellow;
 
     private bool messageCompleted = true;
     private bool skipTyping = false;
@@ -47,7 +50,7 @@ public class DialogueUIManager : MonoBehaviour
         canvasGroup.alpha = 0;
     }
 
-    protected IEnumerator TypewriterCoroutine(string text, float speed)
+    protected IEnumerator TypewriterCoroutine(string text, float speed, Text messageObjNew)
     {
         List<char> textRemaining = new List<char>(text.ToCharArray());
 
@@ -55,14 +58,14 @@ public class DialogueUIManager : MonoBehaviour
         {
             if (skipTyping)
             {
-                messageObj.text = text;
+                messageObjNew.text = text;
                 break;
             }
 
             char next = textRemaining[0];
             textRemaining.RemoveAt(0);
 
-            messageObj.text += next;
+            messageObjNew.text += next;
 
             yield return StartCoroutine(CoroutineUtil.WaitForRealSeconds(1 - speed));
         }
@@ -73,17 +76,27 @@ public class DialogueUIManager : MonoBehaviour
     public void DisplayNewMessage(string characterName, string message, float speed,
         bool isThinking = false, Sprite portrait = null, bool portraitOnLeft = true)
     {
+        Vector3 textPos = messageObj.rectTransform.anchoredPosition;
+
+        if (isThinking && 
+            (characterName == "MC" || characterName == "Character name" || characterName == "Alice" || characterName == "Bunny"))
+        {
+            isThinking = false;
+            characterNameBox.enabled = false;
+            messageBox.sprite = messageBoxYellow;
+            characterName = "";
+            textPos.y = 7;
+        }
+        else
+        {
+            messageBox.sprite = messageBoxBlue;
+            characterNameBox.enabled = true;
+            textPos.y = -12;
+        }
+
+        messageObj.rectTransform.anchoredPosition = textPos;
+
         StopAllCoroutines();
-
-
-        characterNameObj.text = characterName;
-
-        portraitLeft.enabled = false;
-        portraitRight.enabled = false;
-
-        messageObj.text = "";
-        messageCompleted = false;
-        skipTyping = false;
 
         Sprite loadedPortrait = portrait;
 
@@ -92,24 +105,36 @@ public class DialogueUIManager : MonoBehaviour
             loadedPortrait = PortraitLibrary.GetPortrait(characterName);
         }
 
+        portraitLeft.enabled = false;
+        portraitRight.enabled = false;
+
         if (loadedPortrait != null)
         {
-            if (portraitOnLeft)
-            {
-                portraitLeft.enabled = true;
-                portraitLeft.sprite = loadedPortrait;
-            }
-            else
+            if (!portraitOnLeft || isThinking)
             {
                 portraitRight.enabled = true;
                 portraitRight.sprite = loadedPortrait;
             }
+            else
+            {
+                portraitLeft.enabled = true;
+                portraitLeft.sprite = loadedPortrait;
+            }
         }
 
-        messageBox.sprite = isThinking ? thoughtBubbleSprite : normalChatSprite;
-        characterNameBox.gameObject.SetActive(!isThinking);
+        thoughtBubble.gameObject.SetActive(isThinking);
 
-        StartCoroutine(TypewriterCoroutine(message, speed));
+        characterNameObj.text = characterName;
+
+        if (isThinking)
+            thoughtBubbleText.text = "";
+        else
+            messageObj.text = "";
+
+        messageCompleted = false;
+        skipTyping = false;
+
+        StartCoroutine(TypewriterCoroutine(message, speed, isThinking? thoughtBubbleText : messageObj));
     }
 
     // Shows dialogue options, used in the dialogue manager pipeline. For Generic user confirmation options,

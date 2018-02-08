@@ -24,6 +24,8 @@ public class DialogueNode : BaseDialogueNode
 
     public bool isThinking = false;
 
+#if UNITY_EDITOR
+
     public override void NodeGUI()
     {
         DrawNodeGUIPrefix();
@@ -32,6 +34,7 @@ public class DialogueNode : BaseDialogueNode
 
         DrawNodeGUISuffix();
     }
+#endif
 
     public override BaseDialogueNode GetNextNode()
     {

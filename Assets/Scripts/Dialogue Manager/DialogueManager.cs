@@ -121,6 +121,9 @@ public class DialogueManager : MonoBehaviour
             // Get rid of 1 mouse click
             yield return null;
 
+            // Play audio
+            if (node.dialogAudio != null)
+                AudioSource.PlayClipAtPoint(node.dialogAudio, Camera.main.transform.position);
 
             while (uiManager.IsMessageCompletelyShown() == false)
             {
