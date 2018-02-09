@@ -117,14 +117,21 @@ public class Player : Actor2D
 
                 if (interactable != null)
                 {
-                    if ((transform.position - 
+                    if ((transform.position -
                         (touched.gameObject.transform.position +
                         Vector3.Scale(((Vector3)touched.offset), touched.transform.localScale)))
-                        .sqrMagnitude < playerReach)
+                        .magnitude < playerReach)
                     {
                         CheckInteraction(interactable);
 
                         break;
+                    }
+                    else
+                    {
+                        Debug.Log("Failed Interaction (" + touched.name + "): " + (transform.position -
+                        (touched.gameObject.transform.position +
+                        Vector3.Scale(((Vector3)touched.offset), touched.transform.localScale)))
+                        .magnitude);
                     }
                 }
             }
@@ -138,7 +145,8 @@ public class Player : Actor2D
 
         queuedInteractableObject.Interact();
 
-        UndoMoveTo();
+        if (!(queuedInteractableObject is LevelTransition))
+            UndoMoveTo();
 
         queuedInteractableObject = null;
     }

@@ -211,7 +211,8 @@ MonoBehaviour:
   debugMode: 0
   useJoystick: 0
   allowInteractions: 1
-  playerReach: 1.5
+  allowControls: 1
+  playerReach: 1.7
   colliderTransform: {fileID: 4632876603743804}
   hitSound: {fileID: 8300000, guid: 2550a3f33f3c3274096ff0cfd6091ed5, type: 3}
 --- !u!212 &212406849420775924

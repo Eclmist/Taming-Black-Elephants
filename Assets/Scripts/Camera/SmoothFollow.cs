@@ -13,6 +13,7 @@ public class SmoothFollow : MonoBehaviour
 	[HideInInspector]
 	public new Transform transform;
 	public Vector3 cameraOffset;
+    public static Vector3 offsetZone;
 	public bool useFixedUpdate = false;
     //public bool setOffsetOnStart = true;      // Disabled to auto set player to center for game jam use case
 
@@ -85,6 +86,8 @@ public class SmoothFollow : MonoBehaviour
 
     void updateCameraPosition()
     {
+        Vector3 combinedOffset = offsetZone + cameraOffset;
+
         //GLHelper.DrawLine(Vector3.left * 100 + startingPlayerHeight * Vector3.up, Vector3.right * 100 + startingPlayerHeight * Vector3.up);
         if (target == null) { return; }
 
@@ -93,7 +96,7 @@ public class SmoothFollow : MonoBehaviour
         //	cameraTarget.y = startingPlayerHeight;
         //}
 
-        transform.position = Vector3.SmoothDamp(transform.position, cameraTarget - cameraOffset, ref _smoothDampVelocity, smoothDampTime);
+        transform.position = Vector3.SmoothDamp(transform.position, cameraTarget - combinedOffset, ref _smoothDampVelocity, smoothDampTime);
 
         if (transform.position.x + cameraWorldRect.x / 2 > LevelSetting.Instance.rightBound)
         {

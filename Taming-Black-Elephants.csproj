@@ -338,6 +338,7 @@
     <Compile Include="Assets\Scripts\Audio\AudioManager.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraController2D.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraShake.cs" />
+    <Compile Include="Assets\Scripts\Camera\OffsetZone.cs" />
     <Compile Include="Assets\Scripts\Camera\SmoothFollow.cs" />
     <Compile Include="Assets\Scripts\Dialogue Manager\DialogueButton.cs" />
     <Compile Include="Assets\Scripts\Dialogue Manager\DialogueEventManager.cs" />
@@ -361,14 +362,17 @@
     <Compile Include="Assets\Scripts\Interactables\InventoryUI.cs" />
     <Compile Include="Assets\Scripts\Interactables\Objects\HintArrow.cs" />
     <Compile Include="Assets\Scripts\Interactables\Objects\Item.cs" />
+    <Compile Include="Assets\Scripts\Interactables\Objects\NameTag.cs" />
     <Compile Include="Assets\Scripts\Interactables\Objects\Sprite_Pulse.cs" />
     <Compile Include="Assets\Scripts\Joystick\Joystick.cs" />
+    <Compile Include="Assets\Scripts\Keypad\Keypad.cs" />
     <Compile Include="Assets\Scripts\LaserMinigame\Laser.cs" />
     <Compile Include="Assets\Scripts\Level\LevelSetting.cs" />
     <Compile Include="Assets\Scripts\Level\Nagano Manager\Bedroom_0.cs" />
     <Compile Include="Assets\Scripts\Level\Nagano Manager\LivingRoom_1.cs" />
     <Compile Include="Assets\Scripts\Level\Nagano Manager\Lunch_1.cs" />
     <Compile Include="Assets\Scripts\Level\Nagano Manager\MC_Office_1.cs" />
+    <Compile Include="Assets\Scripts\Level\Nagano Manager\MC_Office_4.cs" />
     <Compile Include="Assets\Scripts\Level\Nagano Manager\Office_1.cs" />
     <Compile Include="Assets\Scripts\Misc\CyroTrollDoor.cs" />
     <Compile Include="Assets\Scripts\Misc\LightFlicker.cs" />
